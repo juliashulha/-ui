@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" class=" dk_fouc"><head>
+	<script type="text/javascript" src="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/js/jquery.min.js"></script>
+ 
+	<title>GI Ltd</title>
+<script type="text/javascript"> 
+		DISABLE_ALERT_BEFOREUNLOAD = true;
+ $(document).ready(function () {
+           $('#label_cc_exp_month').text('Expiry Date');
+           $('#label_cc_exp_year').hide();
+           $('#cc_exp_year').insertAfter('#cc_exp_month');
+           $('#error_for_cc_exp_month').after($('#error_for_cc_exp_year'));
+           $('.disclaimer').text($('.disclaimer').text().substr($('.disclaimer').text().indexOf('.') + 1));
+           $('#left_column').prepend($('p.disclaimer'));
+           $('p.disclaimer').show();
+           $('#continueButton').val('Register');
+           $('#cc_exp_month').dropkick();
+           $('#cc_exp_year').dropkick();
+           $("input[type='text']:visible:enabled:first").focus();
+    try {
+        $.getJSON("getCountries.do", {
+            msid: $("#msid").val(),
+            ssid:  $("#ssid").val()
+        }, function (data) {
+            var size = data.length;
+            var result = '';
+            var selected = '';
+            for (var i = 0; i &lt; size; i++) {
+                result += "&lt;option value='" + data[i].iso + "'  " + selected + "&gt;" + data[i].name + "&lt;/option&gt;";
+            }
+            $("#country").html(result);
+$("#country").val($("#country_value").val());
+$("#country").dropkick();
+        });
+    } catch (e) {}
+ });
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/img/favicon_SAFECHARGE.ico" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/css/safechargeTheme.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/js/jquery.validate.js"></script>
+<script type="text/javascript" src="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/js/jquery.dropkick.js"></script>
+<script type="text/javascript" src="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/js/safecharge.validation.js"></script>
+<script type="text/javascript" src="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/js/core.js"></script>
+<script type="text/javascript" src="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/js/defaultTextLabel.js"></script>
+<script type="text/javascript" src="https://cdn.safecharge.com/safecharge_resources/cdn/11210831/resources/js/jquery.tooltipster.min.js"></script>
+<script type="text/javascript">
+	var json_styles = '{"font_size":"11px","font_family":"arial","cs_th_color_val":"000000","cs_th_bgr_val":"","cs_td_color_val":"000000","cs_td_bgr_val":"","cs_tableborder_color_val":"","cs_link_color_val":"ffffff","cs_link_hover_color_val":"ffffff","cs_section_border_color_val":"","cs_section_bgr_val":"","cs_heading_color_val":"000000","cs_heading_bgr_val":"faf5fa","cs_label_color_val":"000000","cs_input_color_val":"","cs_input_bgr_val":"ffffff","cs_btns_border_color_val":"ffffff","cs_btns_bgr_val":"539700","cs_btns_txt_val":"ffffff","cs_btns_hover_txt_val":"ffffff","cs_btns_hover_bgr_val":"8c8b8b","cs_disc_text_col_val":"","cs_page_bgr_val":"f5f5f5","cs_wrapper_bgr_val":"f3f2f7"}';
+</script></head>
+<body marginwidth="0" marginheight="0" style="font-size: 11px; font-family: arial; background: rgb(245, 245, 245);">
+		<form id="PPPParametersForm" method="post" action="review.do">
+<input type="hidden" id="ssid" name="ssid" value="f6e064a72df0f44a7d45ea14935d" />
+<input type="hidden" id="msid" name="msid" value="80042" />
+<input type="hidden" id="locale" name="locale" value="en_US" />
+
+<input type="hidden" id="currency" name="currency" value="USD" />
+<input type="hidden" id="original_currency" name="original_currency" value="" />
+<input type="hidden" id="preferred_currency" name="preferred_currency" value="" />
+<input type="hidden" id="show_currnecy_popup" name="show_currnecy_popup" value="true" />
+<input type="hidden" id="country_hidden" name="country_hidden" value="GB" /> 	
+		<!-- Content :: Start --><style>
+table {display:none;}
+.userInfoVisibility {
+  color: #000000 !important;
+}
+
+.content_inside {  
+    background-image: none;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    border-bottom: medium none;
+    display: inline;
+    float: left;
+    width: 100%;
+overflow: visible;
+}
+
+.column label.REQUIRED{
+ background-image: url("https://cdn.safecharge.com/uploaded_files/41502/1366293784__.newredstar.gif")!important;
+   background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+label{color:#fff;}
+label, .cLabel1 {
+    clear: left;
+    display: inline;
+    float: left;
+    margin-bottom: 6px;
+    padding-right: 5px;
+    width: 160px;
+font-size: 14px;
+}
+.logo, #paymentDetails, #right_column, p.terms_conditions, #btn_back{
+display: none;
+}
+#continueButton{float: left !important;}
+
+#btn_cancel{
+ float: right;
+    margin-left: 0;
+    margin-right: 210px;
+
+}
+
+#left_column{
+ float:none!important;
+ display:block;
+padding: 0;
+}
+.column {
+    display: inline;
+    float: left;
+    margin-left: 20px;
+    padding: 0;
+    width: 465px;
+}
+div.row {
+    clear: both;
+    width: auto;
+}
+.span_input input{
+ border: 1px solid #C7C7C7;
+        border-radius: 4px 4px 4px 4px;
+        border-top:2px solid #C7C7C7; 
+        display: block;
+        float: left;
+ height: 30px;
+ line-height: 30px;
+        margin-bottom: 6px;
+        padding: 0 7px;
+        width: 240px;     
+        background: #f6f6f6!important;
+        background: -moz-linear-gradient(top, #f6f6f6 0%, #ffffff 100%)!important;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#ffffff))!important;
+        background: -webkit-linear-gradient(top, #f6f6f6 0%,#ffffff 100%)!important;
+        background: -o-linear-gradient(top, #f6f6f6 0%,#ffffff 100%)!important;
+        background: -ms-linear-gradient(top, #f6f6f6 0%,#ffffff 100%)!important;
+        background: linear-gradient(to bottom, #f6f6f6 0%,#ffffff 100%)!important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0 )!important;
+}
+.span_input select{
+ border: 1px solid #C7C7C7;
+        border-radius: 4px 4px 4px 4px;
+        display: block;
+        float: left;
+ height: 30px;
+ line-height: 30px;
+        margin-bottom: 6px;
+        width: 254px !important;
+        background: #ffffff;
+ padding-bottom: 6px;
+ padding-top: 5px;
+        background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 50%, #eaeaea 100%)!important;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f6f6f6), color-stop(100%,#eaeaea))!important;
+        background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%)!important;
+        background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%)!important;
+        background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%)!important;
+        background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%)!important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 )!important;
+
+  }
+.wrapper {
+  clear: both;
+    height: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 681px;
+}
+div.buttons {
+    float: left;
+    height: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+.userInfoVisibility{color:#fff;}
+
+.content_inside h3 {
+display:none;
+    float: left;
+    font-size: 1em;
+    padding: 5px 5px 5px 0;
+    width: 100%;
+}
+div.terms_conditions{
+   display:none;
+}
+
+#cc_card_number_css {
+    width: auto;
+}
+
+.userDetails {
+margin-top:0px;
+}
+#user_info_checkbox {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px 195px;
+    width: 100%;
+}
+
+div.buttons input, div.btn input{
+        float:left;
+        /*width: auto;*/
+        background: transparent;
+        margin-right: 5px;
+        width: 138px !important;
+        height: 36px !important;
+        overflow: hidden !important;
+        text-align: center !important;
+        color: #fff;
+        background-image: url('https://cdn.safecharge.com/uploaded_files/41502/1366292956__.continue.png') !important;
+        border: 0px;
+        padding: 0 0 2px 0;
+        font-weight: bold;
+        font-size: 11px;
+        cursor: pointer;
+        margin-left: 190px;
+        text-transform: uppercase;
+}
+
+
+.disclaimer {
+    clear: both;
+    font-size: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+color: #000000;
+}
+#billinginfo_userinfo_column {
+    display: inline-block;
+}
+
+#dk_container_cc_exp_month .dk_toggle, #dk_container_cc_exp_year .dk_toggle {
+    width: 45px!important;
+}
+
+#dk_container_phone1_country_code .dk_toggle{
+    width: 38px !important;;   
+
+}
+#dk_container_country .dk_toggle{
+     width: 200px !important;   
+}
+
+#dk_container_cc_exp_month, #dk_container_cc_exp_year, #dk_container_country{
+background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 50%, #eaeaea 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f6f6f6), color-stop(100%,#eaeaea));
+background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%);
+background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%);
+background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%); 
+  background-color: #f6f6f6;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  height: 30px;
+  float: left !important;
+  left: 0px;
+}
+  #dk_container_cc_exp_month:focus,  #dk_container_cc_exp_year:focus{
+    outline: 0;
+  }
+  #dk_container_cc_exp_month a, #dk_container_cc_exp_year a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+/* Opens the dropdown and holds the menu label */
+#dk_container_cc_exp_month .dk_toggle, #dk_container_cc_exp_year .dk_toggle, #dk_container_country .dk_toggle {
+  background-image: url("https://gp1.wac.edgecastcdn.net/8020B1/ppp/pppthemes/galacoral_v3/img/arrows.gif") !important;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size: auto auto !important;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 7px 45px 7px 10px;
+  text-shadow: #fff 1px 1px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-transition: border-color .5s;
+  -moz-transition: border-color .5s;
+  -o-transition: border-color .5s;
+  transition: border-color .5s;  
+  height: 15px !important;
+}
+
+#dk_container_country .dk_toggle {
+    background-position: 96% center !important;
+}
+
+#dk_container_cc_exp_month .dk_options a:hover, #dk_container_cc_exp_month .dk_option_current a, #dk_container_cc_exp_year .dk_options a:hover, #dk_container_cc_exp_year .dk_option_current a, #dk_container_country .dk_options a:hover, #dk_container_country .dk_option_current a{
+    background-color: #0084C7!important;
+    border-bottom-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+#dk_container_cc_exp_month .dk_options a, #dk_container_cc_exp_year .dk_options a, #dk_container_country .dk_options a{
+    background-color: #FFFFFF;
+    color: #00466C !important;
+    font-weight: bold;
+    padding: 8px 10px!important;
+    text-align: left;
+}
+
+
+ /*Currency dropdown*/
+ #dk_container_currency_list{  
+    float: right;
+    bottom: 8px;
+}
+ 
+.currency_list_span {
+    float: right;
+    height: 25px;
+    width: 56px;
+}
+
+.currency_list_span select {
+    border:1px solid #aaaaaa;
+    padding:1px 1px;
+    box-shadow: 0 1px 0 #FFFFFF; 
+    font-size: 1em;
+    margin-left: 0.6em;
+}
+
+
+
+/*Default dropdowns*/
+.dk_container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#e8e8e8));
+  background: -moz-linear-gradient(top, #e8e8e8, #e8e8e8);
+  background: -o-linear-gradient(top, #e8e8e8, #e8e8e8);
+  background-color: #e8e8e8;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+  .dk_container:focus {
+    outline: 0;
+  }
+  .dk_container a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+/* Opens the dropdown and holds the menu label */
+.dk_toggle {
+
+  background-image: url('../img/arrow_down.png');
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size:15% auto;
+  color: #333;
+  padding: 7px 20px 7px 10px;
+  text-shadow: #fff 1px 1px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-transition: border-color .5s;
+  -moz-transition: border-color .5s;
+  -o-transition: border-color .5s;
+  transition: border-color .5s;
+}
+  .dk_toggle:hover {
+    border-color: #8c8c8c;
+  }
+  /* Applied when the dropdown is focused */
+  .dk_focus .dk_toggle {
+    border-color: #40b5e2;
+  }
+  .dk_focus .dk_toggle {
+    box-shadow: 0 0 5px #40b5e2;
+    -moz-box-shadow: 0 0 5px #40b5e2;
+    -webkit-box-shadow: 0 0 5px #40b5e2;
+  }
+
+/* Applied whenever the dropdown is open */
+.dk_open {
+  z-index: 10;
+}
+  .dk_open .dk_toggle {
+    background-color: #ececec;
+    border-color: #8c8c8c;
+    color: #ccc;
+    box-shadow: inset 0 -2px 5px #ccc;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+  }
+
+/* The outer container of the options */
+.dk_options {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, .2) 0 2px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, .2) 0 2px 8px;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+  .dk_options a {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+    padding: 8px 0px;
+    text-align: center;
+  }
+  .dk_options li:last-child a {
+    border-bottom: none;
+  }
+  .dk_options a:hover,
+  .dk_option_current a {
+    background-color: #A9A9A9;
+    border-bottom-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  }
+
+/* Inner container for options, this is what makes the scrollbar possible. */
+.dk_options_inner {
+  border: 1px solid #8c8c8e;
+  border-bottom-width: 2px;
+  border-bottom-color: #999;
+  color: #333;
+  max-height: 250px;
+  text-shadow: #fff 0 1px 0;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+
+/* Set a max-height on the options inner */
+.dk_options_inner,
+.dk_touch .dk_options {
+  max-height: 250px;
+}
+
+/******  End Theme ******/
+
+/***** Critical to the continued enjoyment of working dropdowns ******/
+
+.dk_container {
+ bottom: 5px;
+    float: right;
+    left: 5px;
+    position: relative;
+    top: -2px;
+}
+  .dk_container a {
+ outline: 0 none;
+    width: auto !important;
+  }
+
+.dk_toggle {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  zoom: 1;
+}
+
+.dk_open {
+  position: relative;
+}
+  .dk_open .dk_options {
+    display: block;
+  }
+  .dk_open .dk_label {
+    color: inherit;
+  }
+
+.dk_options {
+  display: none;
+  margin-top: -1px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+  .dk_options a,
+  .dk_options a:link,
+  .dk_options a:visited {
+    display: block;
+  }
+  .dk_options_inner {
+    overflow: auto;
+    position: relative;
+  }
+
+.dk_touch .dk_options {
+  overflow: hidden;
+}
+
+.dk_touch .dk_options_inner {
+  max-height: none;
+  overflow: visible;
+}
+
+#error_for_cc_exp_month {
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.error_for_field {
+    padding-left: 175px;
+}
+
+
+
+#cc_exp_month_css, cc_exp_year_css, div#div_country  {
+    position: relative;
+}
+#cc_exp_month {
+    margin-right: 0;
+    width: 100px !important;
+    height: 28px;
+    border: 0px !important;
+    display: inline-block !important;
+    background: #fff !important;
+    box-sizing: border-box;
+    position: absolute;
+    left: 176px;
+    bottom: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 18px;
+    padding-left: 5px;
+
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+   -ms-appearance: none !important;
+   -o-appearance: none !important;
+    appearance: none !important;
+}
+#cc_exp_year  {
+    margin-right: 0;
+    width: 100px !important;
+    height: 28px;
+    border: 0px !important;
+    display: inline-block !important;
+    background: #fff !important;
+    box-sizing: border-box;
+    position: absolute;
+    left: 278px;
+    bottom: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 18px;
+    padding-left: 5px;
+
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+   -ms-appearance: none !important;
+   -o-appearance: none !important;
+    appearance: none !important;
+}
+#cc_exp_month::-ms-expand, #cc_exp_year::-ms-expand, select#country::-ms-expand  {
+    display: none !important;
+}
+select#country {
+    display: inline-block !important;
+    position: absolute;
+    left: 176px;
+    top: -2px;
+    height: 31px;
+    box-sizing: border-box;
+    width: 255px !important;
+    line-height: 17px;
+    padding-left: 3px;
+
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+   -ms-appearance: none !important;
+   -o-appearance: none !important;
+    appearance: none !important;
+}
+
+#cc_exp_month, #cc_exp_year, select#country {
+   background:  url("https://cdn.safecharge.com/uploaded_files/41502/1455104471__.arrowdown111.png") no-repeat, -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 50%, #eaeaea 100%)!important;
+    background: url("https://cdn.safecharge.com/uploaded_files/41502/1455104471__.arrowdown111.png") no-repeat !important, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f6f6f6), color-stop(100%,#eaeaea));
+    background: url("https://cdn.safecharge.com/uploaded_files/41502/1455104471__.arrowdown111.png") no-repeat !important, -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%)!important;
+    background: url("https://cdn.safecharge.com/uploaded_files/41502/1455104471__.arrowdown111.png") no-repeat !important, -o-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%) !important;
+    background: url("https://cdn.safecharge.com/uploaded_files/41502/1455104471__.arrowdown111.png") no-repeat, -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%) !important;
+    background: url("https://cdn.safecharge.com/uploaded_files/41502/1455104471__.arrowdown111.png") no-repeat, linear-gradient(to bottom, #ffffff 0%,#f6f6f6 50%,#eaeaea 100%)!important;
+   background-position: 97% center !important;
+}
+label.error[for="cc_exp_month"] {
+    position: absolute;
+    top: 45px;
+    white-space: nowrap;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+<div class="wrapper">
+  
+  
+
+  <div class="head">
+  
+  
+
+
+ </div>
+ <div class="content" style="background: rgb(243, 242, 247);">
+  
+  
+
+  
+  
+
+  <div class="content_inside">
+   
+	
+	
+	
+	<table cellspacing="0" summary="Order Information" width="100%" class="product_table">
+		<thead>
+			<tr>
+				<th colspan="2" class="item" style="color: rgb(0, 0, 0);">Item Name</th>
+				<th class="price" style="color: rgb(0, 0, 0);">Unit Price</th>
+				<th class="quantity" style="color: rgb(0, 0, 0);">Quantity</th>
+				<th class="total" style="color: rgb(0, 0, 0);">Items Subtotal</th>
+				<th class="removeTd" style="color: rgb(0, 0, 0);"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="even">
+					<td class="img" rowspan="1" style="color: rgb(0, 0, 0);">
+						<div id="product_image"></div>
+					</td>
+				<td class="item" style="color: rgb(0, 0, 0);">Coral PP
+				</td>
+				<td class="price" style="color: rgb(0, 0, 0);">0.00 USD</td>
+				<td class="quantity" style="color: rgb(0, 0, 0);">
+							1							
+				</td>
+				
+				<td class="total" style="color: rgb(0, 0, 0);">0.00 USD</td>
+				<td class="removeTd" style="color: rgb(0, 0, 0);">
+				</td>			
+			</tr>
+		<tr class="tax">				
+			<td colspan="3" style="color: rgb(0, 0, 0);">Total tax</td>
+			<td style="color: rgb(0, 0, 0);"> 
+				0.00 USD
+			</td><td style="color: rgb(0, 0, 0);"></td>
+		</tr>
+		<tr class="gran">
+			<td class="b" colspan="3" style="color: rgb(0, 0, 0);">Grand Total</td>
+			<td class="b" style="color: rgb(0, 0, 0);">0.00 USD</td>
+			<td style="color: rgb(0, 0, 0);"></td>
+		</tr>		
+		</tbody>
+	</table>
+	
+
+
+
+
+<!-- to be moved into parent page, because it is used also from back/cancel buttons etc. -->
+
+<input type="hidden" name="pppAction" id="pppAction" value="" />
+<input type="hidden" name="indexOfItemToRemove" id="indexOfItemToRemove" value="" />
+<input type="hidden" name="indexOfSubscriptionToRemove" id="indexOfSubscriptionToRemove" value="" />		
+<input type="hidden" name="subscriptionId" id="subscriptionId" value="" />
+<input type="hidden" name="isShoppingCartAction" id="isShoppingCartAction" value="false" />
+<input type="hidden" name="indexOfItemWithChangedQuantity" id="indexOfItemWithChangedQuantity" value="" />
+<input type="hidden" name="isRebillingHidden" id="isRebillingHidden" value="false" />
+ 
+<input type="hidden" id="amount" name="amount" value="0" />  
+
+   
+<input type="hidden" name="CSRFToken" value="2e7a6ad7c91748d190a822764afc8336" />
+<div class="userDetails" id="userdetails">
+		<h3 style="color: rgb(0, 0, 0); background: rgb(250, 245, 250);">Enter your details: <span>(Required fields are marked with *)</span></h3>
+	
+		<div class="shipping_checkbox" id="user_info_checkbox">
+			<input type="checkbox" name="isCustomUserInfoHidden" id="isCustomUserInfoHidden" class="detailsCheckbox" value="true" onclick="manageSkipUserInfo()" />
+			<span id="userInfoLabel" class="checkboxLabel">User Info (Click to change user billing information): </span>
+		</div>
+		   
+</div>
+		
+<div class="shipping_column" id="billinginfo_userinfo_column" style="display: none;">
+<div class="column" id="billinginfo_userinfo_left_column">
+	
+		<div class="row" id="div_email">	
+				<span id="error_for_email" class="error_for_field"></span>	
+				<span class="span_label">
+					<label for="email" class="REQUIRED" id="label_email" style="color: rgb(0, 0, 0);">
+E-mail					</label>
+				</span>
+				<span class="span_input">
+    <input type="text" id="email" name="email" value="test@playtech.com" maxlength="100" class="REQUIRED" minlenght="5" style="background-color: rgb(255, 255, 255);" />
+
+				</span>	
+		</div>
+	
+		<div class="row" id="div_phone1">	
+				<span id="error_for_phone1" class="error_for_field"></span>	
+				<span class="span_label">
+					<label for="phone1" class="REQUIRED" id="label_phone1" style="color: rgb(0, 0, 0);">
+Phone					</label>
+				</span>
+				<span class="span_input">
+    <input type="text" id="phone1" name="phone1" value="1234567" maxlength="18" class="REQUIRED" style="background-color: rgb(255, 255, 255);" />
+
+				</span>	
+		</div>
+	
+		<div class="row" id="div_address1">	
+				<span id="error_for_address1" class="error_for_field"></span>	
+				<span class="span_label">
+					<label for="address1" class="REQUIRED" id="label_address1" style="color: rgb(0, 0, 0);">
+Address					</label>
+				</span>
+				<span class="span_input">
+    <input type="text" id="address1" name="address1" value="12334, 12334, 12334" maxlength="60" class="REQUIRED" style="background-color: rgb(255, 255, 255);" />
+
+				</span>	
+		</div>
+	
+		<div class="row" id="div_city">	
+				<span id="error_for_city" class="error_for_field"></span>	
+				<span class="span_label">
+					<label for="city" class="REQUIRED" id="label_city" style="color: rgb(0, 0, 0);">
+City					</label>
+				</span>
+				<span class="span_input">
+    <input type="text" id="city" name="city" value="Lviv" maxlength="30" class="REQUIRED" style="background-color: rgb(255, 255, 255);" />
+
+				</span>	
+		</div>
+</div>
+
+<div class="column" id="billinginfo_userinfo_right_column">
+	
+		<div class="row" id="div_country">	
+				<span id="error_for_country" class="error_for_field"></span>	
+					<span class="span_label">
+						<label for="country" class="REQUIRED" id="label_country" style="color: rgb(0, 0, 0);">
+Country						</label>
+					</span>
+					<span class="span_input">
+						<div class="dk_container dk_theme_default" id="dk_container_country" tabindex="" style=""><a class="dk_toggle" style="width: 260px; background-color: rgb(255, 255, 255);"><span class="dk_label">United Kingdom</span></a><div class="dk_options"><ul class="dk_options_inner"><li class=""><a data-dk-dropdown-value="" data-dk-dropdown-text="" style="background-color: rgb(255, 255, 255);"></a></li><li class=""><a data-dk-dropdown-value="AF" data-dk-dropdown-text="Afghanistan" style="background-color: rgb(255, 255, 255);">Afghanistan</a></li><li class=""><a data-dk-dropdown-value="AX" data-dk-dropdown-text="Aland Islands" style="background-color: rgb(255, 255, 255);">Aland Islands</a></li><li class=""><a data-dk-dropdown-value="AL" data-dk-dropdown-text="Albania" style="background-color: rgb(255, 255, 255);">Albania</a></li><li class=""><a data-dk-dropdown-value="DZ" data-dk-dropdown-text="Algeria" style="background-color: rgb(255, 255, 255);">Algeria</a></li><li class=""><a data-dk-dropdown-value="AS" data-dk-dropdown-text="American Samoa" style="background-color: rgb(255, 255, 255);">American Samoa</a></li><li class=""><a data-dk-dropdown-value="AD" data-dk-dropdown-text="Andorra" style="background-color: rgb(255, 255, 255);">Andorra</a></li><li class=""><a data-dk-dropdown-value="AO" data-dk-dropdown-text="Angola" style="background-color: rgb(255, 255, 255);">Angola</a></li><li class=""><a data-dk-dropdown-value="AI" data-dk-dropdown-text="Anguilla" style="background-color: rgb(255, 255, 255);">Anguilla</a></li><li class=""><a data-dk-dropdown-value="AQ" data-dk-dropdown-text="Antarctica" style="background-color: rgb(255, 255, 255);">Antarctica</a></li><li class=""><a data-dk-dropdown-value="AG" data-dk-dropdown-text="Antigua and Barbuda" style="background-color: rgb(255, 255, 255);">Antigua and Barbuda</a></li><li class=""><a data-dk-dropdown-value="AR" data-dk-dropdown-text="Argentina" style="background-color: rgb(255, 255, 255);">Argentina</a></li><li class=""><a data-dk-dropdown-value="AM" data-dk-dropdown-text="Armenia" style="background-color: rgb(255, 255, 255);">Armenia</a></li><li class=""><a data-dk-dropdown-value="AW" data-dk-dropdown-text="Aruba" style="background-color: rgb(255, 255, 255);">Aruba</a></li><li class=""><a data-dk-dropdown-value="AU" data-dk-dropdown-text="Australia" style="background-color: rgb(255, 255, 255);">Australia</a></li><li class=""><a data-dk-dropdown-value="AT" data-dk-dropdown-text="Austria" style="background-color: rgb(255, 255, 255);">Austria</a></li><li class=""><a data-dk-dropdown-value="AZ" data-dk-dropdown-text="Azerbaijan" style="background-color: rgb(255, 255, 255);">Azerbaijan</a></li><li class=""><a data-dk-dropdown-value="BS" data-dk-dropdown-text="Bahamas" style="background-color: rgb(255, 255, 255);">Bahamas</a></li><li class=""><a data-dk-dropdown-value="BH" data-dk-dropdown-text="Bahrain" style="background-color: rgb(255, 255, 255);">Bahrain</a></li><li class=""><a data-dk-dropdown-value="BD" data-dk-dropdown-text="Bangladesh" style="background-color: rgb(255, 255, 255);">Bangladesh</a></li><li class=""><a data-dk-dropdown-value="BB" data-dk-dropdown-text="Barbados" style="background-color: rgb(255, 255, 255);">Barbados</a></li><li class=""><a data-dk-dropdown-value="BY" data-dk-dropdown-text="Belarus" style="background-color: rgb(255, 255, 255);">Belarus</a></li><li class=""><a data-dk-dropdown-value="BE" data-dk-dropdown-text="Belgium" style="background-color: rgb(255, 255, 255);">Belgium</a></li><li class=""><a data-dk-dropdown-value="BZ" data-dk-dropdown-text="Belize" style="background-color: rgb(255, 255, 255);">Belize</a></li><li class=""><a data-dk-dropdown-value="BJ" data-dk-dropdown-text="Benin" style="background-color: rgb(255, 255, 255);">Benin</a></li><li class=""><a data-dk-dropdown-value="BM" data-dk-dropdown-text="Bermuda" style="background-color: rgb(255, 255, 255);">Bermuda</a></li><li class=""><a data-dk-dropdown-value="BT" data-dk-dropdown-text="Bhutan" style="background-color: rgb(255, 255, 255);">Bhutan</a></li><li class=""><a data-dk-dropdown-value="BO" data-dk-dropdown-text="Bolivia" style="background-color: rgb(255, 255, 255);">Bolivia</a></li><li class=""><a data-dk-dropdown-value="BA" data-dk-dropdown-text="Bosnia and Herzegovina" style="background-color: rgb(255, 255, 255);">Bosnia and Herzegovina</a></li><li class=""><a data-dk-dropdown-value="BW" data-dk-dropdown-text="Botswana" style="background-color: rgb(255, 255, 255);">Botswana</a></li><li class=""><a data-dk-dropdown-value="BV" data-dk-dropdown-text="Bouvet Island" style="background-color: rgb(255, 255, 255);">Bouvet Island </a></li><li class=""><a data-dk-dropdown-value="BR" data-dk-dropdown-text="Brazil" style="background-color: rgb(255, 255, 255);">Brazil</a></li><li class=""><a data-dk-dropdown-value="IO" data-dk-dropdown-text="British Indian Ocean Territory" style="background-color: rgb(255, 255, 255);">British Indian Ocean Territory</a></li><li class=""><a data-dk-dropdown-value="BN" data-dk-dropdown-text="Brunei Darussalam" style="background-color: rgb(255, 255, 255);">Brunei Darussalam</a></li><li class=""><a data-dk-dropdown-value="BG" data-dk-dropdown-text="Bulgaria" style="background-color: rgb(255, 255, 255);">Bulgaria</a></li><li class=""><a data-dk-dropdown-value="BF" data-dk-dropdown-text="Burkina Faso" style="background-color: rgb(255, 255, 255);">Burkina Faso</a></li><li class=""><a data-dk-dropdown-value="BI" data-dk-dropdown-text="Burundi" style="background-color: rgb(255, 255, 255);">Burundi</a></li><li class=""><a data-dk-dropdown-value="CV" data-dk-dropdown-text="Cabo Verde" style="background-color: rgb(255, 255, 255);">Cabo Verde</a></li><li class=""><a data-dk-dropdown-value="KH" data-dk-dropdown-text="Cambodia" style="background-color: rgb(255, 255, 255);">Cambodia</a></li><li class=""><a data-dk-dropdown-value="CM" data-dk-dropdown-text="Cameroon" style="background-color: rgb(255, 255, 255);">Cameroon</a></li><li class=""><a data-dk-dropdown-value="CA" data-dk-dropdown-text="Canada" style="background-color: rgb(255, 255, 255);">Canada</a></li><li class=""><a data-dk-dropdown-value="BQ" data-dk-dropdown-text="Caribbean Netherlands" style="background-color: rgb(255, 255, 255);">Caribbean Netherlands</a></li><li class=""><a data-dk-dropdown-value="KY" data-dk-dropdown-text="Cayman Islands" style="background-color: rgb(255, 255, 255);">Cayman Islands</a></li><li class=""><a data-dk-dropdown-value="CF" data-dk-dropdown-text="Central African Republic" style="background-color: rgb(255, 255, 255);">Central African Republic</a></li><li class=""><a data-dk-dropdown-value="TD" data-dk-dropdown-text="Chad" style="background-color: rgb(255, 255, 255);">Chad</a></li><li class=""><a data-dk-dropdown-value="CL" data-dk-dropdown-text="Chile" style="background-color: rgb(255, 255, 255);">Chile</a></li><li class=""><a data-dk-dropdown-value="CN" data-dk-dropdown-text="China" style="background-color: rgb(255, 255, 255);">China</a></li><li class=""><a data-dk-dropdown-value="CX" data-dk-dropdown-text="Christmas Island" style="background-color: rgb(255, 255, 255);">Christmas Island</a></li><li class=""><a data-dk-dropdown-value="CC" data-dk-dropdown-text="Cocos (Keeling) Islands" style="background-color: rgb(255, 255, 255);">Cocos (Keeling) Islands</a></li><li class=""><a data-dk-dropdown-value="CO" data-dk-dropdown-text="Colombia" style="background-color: rgb(255, 255, 255);">Colombia</a></li><li class=""><a data-dk-dropdown-value="KM" data-dk-dropdown-text="Comoros" style="background-color: rgb(255, 255, 255);">Comoros</a></li><li class=""><a data-dk-dropdown-value="CG" data-dk-dropdown-text="Congo" style="background-color: rgb(255, 255, 255);">Congo</a></li><li class=""><a data-dk-dropdown-value="CD" data-dk-dropdown-text="Congo, Democratic Republic of the" style="background-color: rgb(255, 255, 255);">Congo, Democratic Republic of the</a></li><li class=""><a data-dk-dropdown-value="CK" data-dk-dropdown-text="Cook Islands" style="background-color: rgb(255, 255, 255);">Cook Islands</a></li><li class=""><a data-dk-dropdown-value="CR" data-dk-dropdown-text="Costa Rica" style="background-color: rgb(255, 255, 255);">Costa Rica</a></li><li class=""><a data-dk-dropdown-value="HR" data-dk-dropdown-text="Croatia" style="background-color: rgb(255, 255, 255);">Croatia</a></li><li class=""><a data-dk-dropdown-value="CU" data-dk-dropdown-text="Cuba" style="background-color: rgb(255, 255, 255);">Cuba</a></li><li class=""><a data-dk-dropdown-value="CW" data-dk-dropdown-text="Curacao" style="background-color: rgb(255, 255, 255);">Curacao</a></li><li class=""><a data-dk-dropdown-value="CY" data-dk-dropdown-text="Cyprus" style="background-color: rgb(255, 255, 255);">Cyprus</a></li><li class=""><a data-dk-dropdown-value="CZ" data-dk-dropdown-text="Czech Republic" style="background-color: rgb(255, 255, 255);">Czech Republic</a></li><li class=""><a data-dk-dropdown-value="CI" data-dk-dropdown-text="Côte d'Ivoire" style="background-color: rgb(255, 255, 255);">Côte d'Ivoire</a></li><li class=""><a data-dk-dropdown-value="DK" data-dk-dropdown-text="Denmark" style="background-color: rgb(255, 255, 255);">Denmark</a></li><li class=""><a data-dk-dropdown-value="DJ" data-dk-dropdown-text="Djibouti" style="background-color: rgb(255, 255, 255);">Djibouti</a></li><li class=""><a data-dk-dropdown-value="DM" data-dk-dropdown-text="Dominica" style="background-color: rgb(255, 255, 255);">Dominica</a></li><li class=""><a data-dk-dropdown-value="DO" data-dk-dropdown-text="Dominican Republic" style="background-color: rgb(255, 255, 255);">Dominican Republic</a></li><li class=""><a data-dk-dropdown-value="EC" data-dk-dropdown-text="Ecuador" style="background-color: rgb(255, 255, 255);">Ecuador</a></li><li class=""><a data-dk-dropdown-value="EG" data-dk-dropdown-text="Egypt" style="background-color: rgb(255, 255, 255);">Egypt</a></li><li class=""><a data-dk-dropdown-value="SV" data-dk-dropdown-text="El Salvador" style="background-color: rgb(255, 255, 255);">El Salvador</a></li><li class=""><a data-dk-dropdown-value="GQ" data-dk-dropdown-text="Equatorial Guinea" style="background-color: rgb(255, 255, 255);">Equatorial Guinea</a></li><li class=""><a data-dk-dropdown-value="ER" data-dk-dropdown-text="Eritrea" style="background-color: rgb(255, 255, 255);">Eritrea</a></li><li class=""><a data-dk-dropdown-value="EE" data-dk-dropdown-text="Estonia" style="background-color: rgb(255, 255, 255);">Estonia</a></li><li class=""><a data-dk-dropdown-value="ET" data-dk-dropdown-text="Ethiopia" style="background-color: rgb(255, 255, 255);">Ethiopia</a></li><li class=""><a data-dk-dropdown-value="FK" data-dk-dropdown-text="Falkland Islands" style="background-color: rgb(255, 255, 255);">Falkland Islands</a></li><li class=""><a data-dk-dropdown-value="FO" data-dk-dropdown-text="Faroe Islands" style="background-color: rgb(255, 255, 255);">Faroe Islands</a></li><li class=""><a data-dk-dropdown-value="FJ" data-dk-dropdown-text="Fiji" style="background-color: rgb(255, 255, 255);">Fiji</a></li><li class=""><a data-dk-dropdown-value="FI" data-dk-dropdown-text="Finland" style="background-color: rgb(255, 255, 255);">Finland</a></li><li class=""><a data-dk-dropdown-value="FR" data-dk-dropdown-text="France" style="background-color: rgb(255, 255, 255);">France</a></li><li class=""><a data-dk-dropdown-value="GF" data-dk-dropdown-text="French Guiana" style="background-color: rgb(255, 255, 255);">French Guiana</a></li><li class=""><a data-dk-dropdown-value="PF" data-dk-dropdown-text="French Polynesia" style="background-color: rgb(255, 255, 255);">French Polynesia</a></li><li class=""><a data-dk-dropdown-value="TF" data-dk-dropdown-text="French Southern Territories" style="background-color: rgb(255, 255, 255);">French Southern Territories</a></li><li class=""><a data-dk-dropdown-value="GA" data-dk-dropdown-text="Gabon" style="background-color: rgb(255, 255, 255);">Gabon</a></li><li class=""><a data-dk-dropdown-value="GM" data-dk-dropdown-text="Gambia" style="background-color: rgb(255, 255, 255);">Gambia</a></li><li class=""><a data-dk-dropdown-value="GE" data-dk-dropdown-text="Georgia" style="background-color: rgb(255, 255, 255);">Georgia</a></li><li class=""><a data-dk-dropdown-value="DE" data-dk-dropdown-text="Germany" style="background-color: rgb(255, 255, 255);">Germany</a></li><li class=""><a data-dk-dropdown-value="GH" data-dk-dropdown-text="Ghana" style="background-color: rgb(255, 255, 255);">Ghana</a></li><li class=""><a data-dk-dropdown-value="GI" data-dk-dropdown-text="Gibraltar" style="background-color: rgb(255, 255, 255);">Gibraltar</a></li><li class=""><a data-dk-dropdown-value="GR" data-dk-dropdown-text="Greece" style="background-color: rgb(255, 255, 255);">Greece</a></li><li class=""><a data-dk-dropdown-value="GL" data-dk-dropdown-text="Greenland" style="background-color: rgb(255, 255, 255);">Greenland</a></li><li class=""><a data-dk-dropdown-value="GD" data-dk-dropdown-text="Grenada" style="background-color: rgb(255, 255, 255);">Grenada</a></li><li class=""><a data-dk-dropdown-value="GP" data-dk-dropdown-text="Guadeloupe" style="background-color: rgb(255, 255, 255);">Guadeloupe</a></li><li class=""><a data-dk-dropdown-value="GU" data-dk-dropdown-text="Guam" style="background-color: rgb(255, 255, 255);">Guam</a></li><li class=""><a data-dk-dropdown-value="GT" data-dk-dropdown-text="Guatemala" style="background-color: rgb(255, 255, 255);">Guatemala</a></li><li class=""><a data-dk-dropdown-value="GG" data-dk-dropdown-text="Guernsey" style="background-color: rgb(255, 255, 255);">Guernsey</a></li><li class=""><a data-dk-dropdown-value="GN" data-dk-dropdown-text="Guinea" style="background-color: rgb(255, 255, 255);">Guinea</a></li><li class=""><a data-dk-dropdown-value="GW" data-dk-dropdown-text="Guinea-Bissau" style="background-color: rgb(255, 255, 255);">Guinea-Bissau</a></li><li class=""><a data-dk-dropdown-value="GY" data-dk-dropdown-text="Guyana" style="background-color: rgb(255, 255, 255);">Guyana</a></li><li class=""><a data-dk-dropdown-value="HT" data-dk-dropdown-text="Haiti" style="background-color: rgb(255, 255, 255);">Haiti</a></li><li class=""><a data-dk-dropdown-value="HM" data-dk-dropdown-text="Heard Island and McDonald Islands" style="background-color: rgb(255, 255, 255);">Heard Island and McDonald Islands</a></li><li class=""><a data-dk-dropdown-value="VA" data-dk-dropdown-text="Holy See (Vatican)" style="background-color: rgb(255, 255, 255);">Holy See (Vatican)</a></li><li class=""><a data-dk-dropdown-value="HN" data-dk-dropdown-text="Honduras" style="background-color: rgb(255, 255, 255);">Honduras</a></li><li class=""><a data-dk-dropdown-value="HK" data-dk-dropdown-text="Hong Kong" style="background-color: rgb(255, 255, 255);">Hong Kong</a></li><li class=""><a data-dk-dropdown-value="HU" data-dk-dropdown-text="Hungary" style="background-color: rgb(255, 255, 255);">Hungary</a></li><li class=""><a data-dk-dropdown-value="IS" data-dk-dropdown-text="Iceland" style="background-color: rgb(255, 255, 255);">Iceland</a></li><li class=""><a data-dk-dropdown-value="IN" data-dk-dropdown-text="India" style="background-color: rgb(255, 255, 255);">India</a></li><li class=""><a data-dk-dropdown-value="ID" data-dk-dropdown-text="Indonesia" style="background-color: rgb(255, 255, 255);">Indonesia</a></li><li class=""><a data-dk-dropdown-value="IR" data-dk-dropdown-text="Iran, Islamic Republic of" style="background-color: rgb(255, 255, 255);">Iran, Islamic Republic of</a></li><li class=""><a data-dk-dropdown-value="IQ" data-dk-dropdown-text="Iraq" style="background-color: rgb(255, 255, 255);">Iraq</a></li><li class=""><a data-dk-dropdown-value="IE" data-dk-dropdown-text="Ireland" style="background-color: rgb(255, 255, 255);">Ireland</a></li><li class=""><a data-dk-dropdown-value="IM" data-dk-dropdown-text="Isle of Man" style="background-color: rgb(255, 255, 255);">Isle of Man</a></li><li class=""><a data-dk-dropdown-value="IL" data-dk-dropdown-text="Israel" style="background-color: rgb(255, 255, 255);">Israel</a></li><li class=""><a data-dk-dropdown-value="IT" data-dk-dropdown-text="Italy" style="background-color: rgb(255, 255, 255);">Italy</a></li><li class=""><a data-dk-dropdown-value="JM" data-dk-dropdown-text="Jamaica" style="background-color: rgb(255, 255, 255);">Jamaica</a></li><li class=""><a data-dk-dropdown-value="JP" data-dk-dropdown-text="Japan" style="background-color: rgb(255, 255, 255);">Japan</a></li><li class=""><a data-dk-dropdown-value="JE" data-dk-dropdown-text="Jersey" style="background-color: rgb(255, 255, 255);">Jersey</a></li><li class=""><a data-dk-dropdown-value="JO" data-dk-dropdown-text="Jordan" style="background-color: rgb(255, 255, 255);">Jordan</a></li><li class=""><a data-dk-dropdown-value="KZ" data-dk-dropdown-text="Kazakhstan" style="background-color: rgb(255, 255, 255);">Kazakhstan</a></li><li class=""><a data-dk-dropdown-value="KE" data-dk-dropdown-text="Kenya" style="background-color: rgb(255, 255, 255);">Kenya</a></li><li class=""><a data-dk-dropdown-value="KI" data-dk-dropdown-text="Kiribati" style="background-color: rgb(255, 255, 255);">Kiribati</a></li><li class=""><a data-dk-dropdown-value="KP" data-dk-dropdown-text="Korea, Democratic People's Republic of" style="background-color: rgb(255, 255, 255);">Korea, Democratic People's Republic of</a></li><li class=""><a data-dk-dropdown-value="KR" data-dk-dropdown-text="Korea, Republic of" style="background-color: rgb(255, 255, 255);">Korea, Republic of</a></li><li class=""><a data-dk-dropdown-value="XK" data-dk-dropdown-text="Kosovo" style="background-color: rgb(255, 255, 255);">Kosovo</a></li><li class=""><a data-dk-dropdown-value="KW" data-dk-dropdown-text="Kuwait" style="background-color: rgb(255, 255, 255);">Kuwait</a></li><li class=""><a data-dk-dropdown-value="KG" data-dk-dropdown-text="Kyrgyzstan" style="background-color: rgb(255, 255, 255);">Kyrgyzstan</a></li><li class=""><a data-dk-dropdown-value="LA" data-dk-dropdown-text="Lao People's Democratic Republic" style="background-color: rgb(255, 255, 255);">Lao People's Democratic Republic</a></li><li class=""><a data-dk-dropdown-value="LV" data-dk-dropdown-text="Latvia" style="background-color: rgb(255, 255, 255);">Latvia</a></li><li class=""><a data-dk-dropdown-value="LB" data-dk-dropdown-text="Lebanon" style="background-color: rgb(255, 255, 255);">Lebanon</a></li><li class=""><a data-dk-dropdown-value="LS" data-dk-dropdown-text="Lesotho" style="background-color: rgb(255, 255, 255);">Lesotho</a></li><li class=""><a data-dk-dropdown-value="LR" data-dk-dropdown-text="Liberia" style="background-color: rgb(255, 255, 255);">Liberia</a></li><li class=""><a data-dk-dropdown-value="LY" data-dk-dropdown-text="Libya" style="background-color: rgb(255, 255, 255);">Libya</a></li><li class=""><a data-dk-dropdown-value="LI" data-dk-dropdown-text="Liechtenstein" style="background-color: rgb(255, 255, 255);">Liechtenstein</a></li><li class=""><a data-dk-dropdown-value="LT" data-dk-dropdown-text="Lithuania" style="background-color: rgb(255, 255, 255);">Lithuania</a></li><li class=""><a data-dk-dropdown-value="LU" data-dk-dropdown-text="Luxembourg" style="background-color: rgb(255, 255, 255);">Luxembourg</a></li><li class=""><a data-dk-dropdown-value="MO" data-dk-dropdown-text="Macao" style="background-color: rgb(255, 255, 255);">Macao</a></li><li class=""><a data-dk-dropdown-value="MK" data-dk-dropdown-text="Macedonia" style="background-color: rgb(255, 255, 255);">Macedonia</a></li><li class=""><a data-dk-dropdown-value="MG" data-dk-dropdown-text="Madagascar" style="background-color: rgb(255, 255, 255);">Madagascar</a></li><li class=""><a data-dk-dropdown-value="MW" data-dk-dropdown-text="Malawi" style="background-color: rgb(255, 255, 255);">Malawi</a></li><li class=""><a data-dk-dropdown-value="MY" data-dk-dropdown-text="Malaysia" style="background-color: rgb(255, 255, 255);">Malaysia</a></li><li class=""><a data-dk-dropdown-value="MV" data-dk-dropdown-text="Maldives" style="background-color: rgb(255, 255, 255);">Maldives</a></li><li class=""><a data-dk-dropdown-value="ML" data-dk-dropdown-text="Mali" style="background-color: rgb(255, 255, 255);">Mali</a></li><li class=""><a data-dk-dropdown-value="MT" data-dk-dropdown-text="Malta" style="background-color: rgb(255, 255, 255);">Malta</a></li><li class=""><a data-dk-dropdown-value="MH" data-dk-dropdown-text="Marshall Islands" style="background-color: rgb(255, 255, 255);">Marshall Islands</a></li><li class=""><a data-dk-dropdown-value="MQ" data-dk-dropdown-text="Martinique" style="background-color: rgb(255, 255, 255);">Martinique</a></li><li class=""><a data-dk-dropdown-value="MR" data-dk-dropdown-text="Mauritania" style="background-color: rgb(255, 255, 255);">Mauritania</a></li><li class=""><a data-dk-dropdown-value="MU" data-dk-dropdown-text="Mauritius" style="background-color: rgb(255, 255, 255);">Mauritius</a></li><li class=""><a data-dk-dropdown-value="YT" data-dk-dropdown-text="Mayotte" style="background-color: rgb(255, 255, 255);">Mayotte</a></li><li class=""><a data-dk-dropdown-value="MX" data-dk-dropdown-text="Mexico" style="background-color: rgb(255, 255, 255);">Mexico</a></li><li class=""><a data-dk-dropdown-value="FM" data-dk-dropdown-text="Micronesia, Federated States of" style="background-color: rgb(255, 255, 255);">Micronesia, Federated States of</a></li><li class=""><a data-dk-dropdown-value="MD" data-dk-dropdown-text="Moldova, Republic of" style="background-color: rgb(255, 255, 255);">Moldova, Republic of</a></li><li class=""><a data-dk-dropdown-value="MC" data-dk-dropdown-text="Monaco" style="background-color: rgb(255, 255, 255);">Monaco</a></li><li class=""><a data-dk-dropdown-value="MN" data-dk-dropdown-text="Mongolia" style="background-color: rgb(255, 255, 255);">Mongolia</a></li><li class=""><a data-dk-dropdown-value="ME" data-dk-dropdown-text="Montenegro" style="background-color: rgb(255, 255, 255);">Montenegro</a></li><li class=""><a data-dk-dropdown-value="MS" data-dk-dropdown-text="Montserrat" style="background-color: rgb(255, 255, 255);">Montserrat</a></li><li class=""><a data-dk-dropdown-value="MA" data-dk-dropdown-text="Morocco" style="background-color: rgb(255, 255, 255);">Morocco</a></li><li class=""><a data-dk-dropdown-value="MZ" data-dk-dropdown-text="Mozambique" style="background-color: rgb(255, 255, 255);">Mozambique</a></li><li class=""><a data-dk-dropdown-value="MM" data-dk-dropdown-text="Myanmar" style="background-color: rgb(255, 255, 255);">Myanmar</a></li><li class=""><a data-dk-dropdown-value="NA" data-dk-dropdown-text="Namibia" style="background-color: rgb(255, 255, 255);">Namibia</a></li><li class=""><a data-dk-dropdown-value="NR" data-dk-dropdown-text="Nauru" style="background-color: rgb(255, 255, 255);">Nauru</a></li><li class=""><a data-dk-dropdown-value="NP" data-dk-dropdown-text="Nepal" style="background-color: rgb(255, 255, 255);">Nepal</a></li><li class=""><a data-dk-dropdown-value="NL" data-dk-dropdown-text="Netherlands" style="background-color: rgb(255, 255, 255);">Netherlands</a></li><li class=""><a data-dk-dropdown-value="AN" data-dk-dropdown-text="Netherlands antilles" style="background-color: rgb(255, 255, 255);">Netherlands antilles</a></li><li class=""><a data-dk-dropdown-value="NC" data-dk-dropdown-text="New Caledonia" style="background-color: rgb(255, 255, 255);">New Caledonia</a></li><li class=""><a data-dk-dropdown-value="NZ" data-dk-dropdown-text="New Zealand" style="background-color: rgb(255, 255, 255);">New Zealand</a></li><li class=""><a data-dk-dropdown-value="NI" data-dk-dropdown-text="Nicaragua" style="background-color: rgb(255, 255, 255);">Nicaragua</a></li><li class=""><a data-dk-dropdown-value="NE" data-dk-dropdown-text="Niger" style="background-color: rgb(255, 255, 255);">Niger</a></li><li class=""><a data-dk-dropdown-value="NG" data-dk-dropdown-text="Nigeria" style="background-color: rgb(255, 255, 255);">Nigeria</a></li><li class=""><a data-dk-dropdown-value="NU" data-dk-dropdown-text="Niue" style="background-color: rgb(255, 255, 255);">Niue</a></li><li class=""><a data-dk-dropdown-value="NF" data-dk-dropdown-text="Norfolk Island" style="background-color: rgb(255, 255, 255);">Norfolk Island</a></li><li class=""><a data-dk-dropdown-value="MP" data-dk-dropdown-text="Northern Mariana Islands" style="background-color: rgb(255, 255, 255);">Northern Mariana Islands</a></li><li class=""><a data-dk-dropdown-value="NO" data-dk-dropdown-text="Norway" style="background-color: rgb(255, 255, 255);">Norway</a></li><li class=""><a data-dk-dropdown-value="OM" data-dk-dropdown-text="Oman" style="background-color: rgb(255, 255, 255);">Oman</a></li><li class=""><a data-dk-dropdown-value="PK" data-dk-dropdown-text="Pakistan" style="background-color: rgb(255, 255, 255);">Pakistan</a></li><li class=""><a data-dk-dropdown-value="PW" data-dk-dropdown-text="Palau" style="background-color: rgb(255, 255, 255);">Palau</a></li><li class=""><a data-dk-dropdown-value="PS" data-dk-dropdown-text="Palestine" style="background-color: rgb(255, 255, 255);">Palestine</a></li><li class=""><a data-dk-dropdown-value="PA" data-dk-dropdown-text="Panama" style="background-color: rgb(255, 255, 255);">Panama</a></li><li class=""><a data-dk-dropdown-value="PG" data-dk-dropdown-text="Papua New Guinea" style="background-color: rgb(255, 255, 255);">Papua New Guinea</a></li><li class=""><a data-dk-dropdown-value="PY" data-dk-dropdown-text="Paraguay" style="background-color: rgb(255, 255, 255);">Paraguay</a></li><li class=""><a data-dk-dropdown-value="PE" data-dk-dropdown-text="Peru" style="background-color: rgb(255, 255, 255);">Peru</a></li><li class=""><a data-dk-dropdown-value="PH" data-dk-dropdown-text="Philippines" style="background-color: rgb(255, 255, 255);">Philippines</a></li><li class=""><a data-dk-dropdown-value="PN" data-dk-dropdown-text="Pitcairn" style="background-color: rgb(255, 255, 255);">Pitcairn</a></li><li class=""><a data-dk-dropdown-value="PL" data-dk-dropdown-text="Poland" style="background-color: rgb(255, 255, 255);">Poland</a></li><li class=""><a data-dk-dropdown-value="PT" data-dk-dropdown-text="Portugal" style="background-color: rgb(255, 255, 255);">Portugal</a></li><li class=""><a data-dk-dropdown-value="PR" data-dk-dropdown-text="Puerto Rico" style="background-color: rgb(255, 255, 255);">Puerto Rico</a></li><li class=""><a data-dk-dropdown-value="QA" data-dk-dropdown-text="Qatar" style="background-color: rgb(255, 255, 255);">Qatar</a></li><li class=""><a data-dk-dropdown-value="RE" data-dk-dropdown-text="Reunion" style="background-color: rgb(255, 255, 255);">Reunion</a></li><li class=""><a data-dk-dropdown-value="RO" data-dk-dropdown-text="Romania" style="background-color: rgb(255, 255, 255);">Romania</a></li><li class=""><a data-dk-dropdown-value="RU" data-dk-dropdown-text="Russian Federation" style="background-color: rgb(255, 255, 255);">Russian Federation</a></li><li class=""><a data-dk-dropdown-value="RW" data-dk-dropdown-text="Rwanda" style="background-color: rgb(255, 255, 255);">Rwanda</a></li><li class=""><a data-dk-dropdown-value="BL" data-dk-dropdown-text="Saint Barthelemy" style="background-color: rgb(255, 255, 255);">Saint Barthelemy</a></li><li class=""><a data-dk-dropdown-value="SH" data-dk-dropdown-text="Saint Helena" style="background-color: rgb(255, 255, 255);">Saint Helena</a></li><li class=""><a data-dk-dropdown-value="KN" data-dk-dropdown-text="Saint Kitts and Nevis" style="background-color: rgb(255, 255, 255);">Saint Kitts and Nevis</a></li><li class=""><a data-dk-dropdown-value="LC" data-dk-dropdown-text="Saint Lucia" style="background-color: rgb(255, 255, 255);">Saint Lucia</a></li><li class=""><a data-dk-dropdown-value="MF" data-dk-dropdown-text="Saint Martin (French Part)" style="background-color: rgb(255, 255, 255);">Saint Martin (French Part)</a></li><li class=""><a data-dk-dropdown-value="PM" data-dk-dropdown-text="Saint Pierre and Miquelon" style="background-color: rgb(255, 255, 255);">Saint Pierre and Miquelon</a></li><li class=""><a data-dk-dropdown-value="VC" data-dk-dropdown-text="Saint Vincent and the Grenadines" style="background-color: rgb(255, 255, 255);">Saint Vincent and the Grenadines</a></li><li class=""><a data-dk-dropdown-value="WS" data-dk-dropdown-text="Samoa" style="background-color: rgb(255, 255, 255);">Samoa</a></li><li class=""><a data-dk-dropdown-value="SM" data-dk-dropdown-text="San Marino" style="background-color: rgb(255, 255, 255);">San Marino</a></li><li class=""><a data-dk-dropdown-value="SA" data-dk-dropdown-text="Saudi Arabia" style="background-color: rgb(255, 255, 255);">Saudi Arabia</a></li><li class=""><a data-dk-dropdown-value="SN" data-dk-dropdown-text="Senegal" style="background-color: rgb(255, 255, 255);">Senegal</a></li><li class=""><a data-dk-dropdown-value="RS" data-dk-dropdown-text="Serbia" style="background-color: rgb(255, 255, 255);">Serbia</a></li><li class=""><a data-dk-dropdown-value="SC" data-dk-dropdown-text="Seychelles" style="background-color: rgb(255, 255, 255);">Seychelles</a></li><li class=""><a data-dk-dropdown-value="SL" data-dk-dropdown-text="Sierra Leone" style="background-color: rgb(255, 255, 255);">Sierra Leone</a></li><li class=""><a data-dk-dropdown-value="SG" data-dk-dropdown-text="Singapore" style="background-color: rgb(255, 255, 255);">Singapore</a></li><li class=""><a data-dk-dropdown-value="SX" data-dk-dropdown-text="Sint Maarten (Dutch part)" style="background-color: rgb(255, 255, 255);">Sint Maarten (Dutch part)</a></li><li class=""><a data-dk-dropdown-value="SK" data-dk-dropdown-text="Slovakia" style="background-color: rgb(255, 255, 255);">Slovakia</a></li><li class=""><a data-dk-dropdown-value="SI" data-dk-dropdown-text="Slovenia" style="background-color: rgb(255, 255, 255);">Slovenia</a></li><li class=""><a data-dk-dropdown-value="SB" data-dk-dropdown-text="Solomon Islands" style="background-color: rgb(255, 255, 255);">Solomon Islands</a></li><li class=""><a data-dk-dropdown-value="SO" data-dk-dropdown-text="Somalia" style="background-color: rgb(255, 255, 255);">Somalia</a></li><li class=""><a data-dk-dropdown-value="ZA" data-dk-dropdown-text="South Africa" style="background-color: rgb(255, 255, 255);">South Africa</a></li><li class=""><a data-dk-dropdown-value="GS" data-dk-dropdown-text="South Georgia and the South Sandwich Islands" style="background-color: rgb(255, 255, 255);">South Georgia and the South Sandwich Islands</a></li><li class=""><a data-dk-dropdown-value="SS" data-dk-dropdown-text="South Sudan" style="background-color: rgb(255, 255, 255);">South Sudan</a></li><li class=""><a data-dk-dropdown-value="ES" data-dk-dropdown-text="Spain" style="background-color: rgb(255, 255, 255);">Spain</a></li><li class=""><a data-dk-dropdown-value="LK" data-dk-dropdown-text="Sri Lanka" style="background-color: rgb(255, 255, 255);">Sri Lanka</a></li><li class=""><a data-dk-dropdown-value="SD" data-dk-dropdown-text="Sudan" style="background-color: rgb(255, 255, 255);">Sudan</a></li><li class=""><a data-dk-dropdown-value="SR" data-dk-dropdown-text="Suriname" style="background-color: rgb(255, 255, 255);">Suriname</a></li><li class=""><a data-dk-dropdown-value="SJ" data-dk-dropdown-text="Svalbard and Jan Mayen" style="background-color: rgb(255, 255, 255);">Svalbard and Jan Mayen</a></li><li class=""><a data-dk-dropdown-value="SZ" data-dk-dropdown-text="Swaziland" style="background-color: rgb(255, 255, 255);">Swaziland</a></li><li class=""><a data-dk-dropdown-value="SE" data-dk-dropdown-text="Sweden" style="background-color: rgb(255, 255, 255);">Sweden</a></li><li class=""><a data-dk-dropdown-value="CH" data-dk-dropdown-text="Switzerland" style="background-color: rgb(255, 255, 255);">Switzerland</a></li><li class=""><a data-dk-dropdown-value="SY" data-dk-dropdown-text="Syrian Arab Republic" style="background-color: rgb(255, 255, 255);">Syrian Arab Republic</a></li><li class=""><a data-dk-dropdown-value="ST" data-dk-dropdown-text="São Tomé and Príncipe" style="background-color: rgb(255, 255, 255);">São Tomé and Príncipe</a></li><li class=""><a data-dk-dropdown-value="TW" data-dk-dropdown-text="Taiwan" style="background-color: rgb(255, 255, 255);">Taiwan</a></li><li class=""><a data-dk-dropdown-value="TJ" data-dk-dropdown-text="Tajikistan" style="background-color: rgb(255, 255, 255);">Tajikistan</a></li><li class=""><a data-dk-dropdown-value="TZ" data-dk-dropdown-text="Tanzania, United Republic of" style="background-color: rgb(255, 255, 255);">Tanzania, United Republic of</a></li><li class=""><a data-dk-dropdown-value="TH" data-dk-dropdown-text="Thailand" style="background-color: rgb(255, 255, 255);">Thailand</a></li><li class=""><a data-dk-dropdown-value="TL" data-dk-dropdown-text="Timor-Leste" style="background-color: rgb(255, 255, 255);">Timor-Leste</a></li><li class=""><a data-dk-dropdown-value="TG" data-dk-dropdown-text="Togo" style="background-color: rgb(255, 255, 255);">Togo</a></li><li class=""><a data-dk-dropdown-value="TK" data-dk-dropdown-text="Tokelau" style="background-color: rgb(255, 255, 255);">Tokelau</a></li><li class=""><a data-dk-dropdown-value="TO" data-dk-dropdown-text="Tonga" style="background-color: rgb(255, 255, 255);">Tonga</a></li><li class=""><a data-dk-dropdown-value="TT" data-dk-dropdown-text="Trinidad and Tobago" style="background-color: rgb(255, 255, 255);">Trinidad and Tobago</a></li><li class=""><a data-dk-dropdown-value="TN" data-dk-dropdown-text="Tunisia" style="background-color: rgb(255, 255, 255);">Tunisia</a></li><li class=""><a data-dk-dropdown-value="TR" data-dk-dropdown-text="Turkey" style="background-color: rgb(255, 255, 255);">Turkey</a></li><li class=""><a data-dk-dropdown-value="TM" data-dk-dropdown-text="Turkmenistan" style="background-color: rgb(255, 255, 255);">Turkmenistan</a></li><li class=""><a data-dk-dropdown-value="TC" data-dk-dropdown-text="Turks and Caicos Islands" style="background-color: rgb(255, 255, 255);">Turks and Caicos Islands</a></li><li class=""><a data-dk-dropdown-value="TV" data-dk-dropdown-text="Tuvalu" style="background-color: rgb(255, 255, 255);">Tuvalu</a></li><li class=""><a data-dk-dropdown-value="UG" data-dk-dropdown-text="Uganda" style="background-color: rgb(255, 255, 255);">Uganda</a></li><li class=""><a data-dk-dropdown-value="UA" data-dk-dropdown-text="Ukraine" style="background-color: rgb(255, 255, 255);">Ukraine</a></li><li class=""><a data-dk-dropdown-value="AE" data-dk-dropdown-text="United Arab Emirates" style="background-color: rgb(255, 255, 255);">United Arab Emirates</a></li><li class="dk_option_current"><a data-dk-dropdown-value="GB" data-dk-dropdown-text="United Kingdom" style="background-color: rgb(255, 255, 255);">United Kingdom</a></li><li class=""><a data-dk-dropdown-value="US" data-dk-dropdown-text="United States" style="background-color: rgb(255, 255, 255);">United States</a></li><li class=""><a data-dk-dropdown-value="UM" data-dk-dropdown-text="United States Minor Outlying Islands" style="background-color: rgb(255, 255, 255);">United States Minor Outlying Islands</a></li><li class=""><a data-dk-dropdown-value="UY" data-dk-dropdown-text="Uruguay" style="background-color: rgb(255, 255, 255);">Uruguay</a></li><li class=""><a data-dk-dropdown-value="UZ" data-dk-dropdown-text="Uzbekistan" style="background-color: rgb(255, 255, 255);">Uzbekistan</a></li><li class=""><a data-dk-dropdown-value="VU" data-dk-dropdown-text="Vanuatu" style="background-color: rgb(255, 255, 255);">Vanuatu</a></li><li class=""><a data-dk-dropdown-value="VE" data-dk-dropdown-text="Venezuela" style="background-color: rgb(255, 255, 255);">Venezuela</a></li><li class=""><a data-dk-dropdown-value="VN" data-dk-dropdown-text="Vietnam" style="background-color: rgb(255, 255, 255);">Vietnam</a></li><li class=""><a data-dk-dropdown-value="VG" data-dk-dropdown-text="Virgin Islands, British" style="background-color: rgb(255, 255, 255);">Virgin Islands, British</a></li><li class=""><a data-dk-dropdown-value="VI" data-dk-dropdown-text="Virgin Islands, U.S." style="background-color: rgb(255, 255, 255);">Virgin Islands, U.S.</a></li><li class=""><a data-dk-dropdown-value="WF" data-dk-dropdown-text="Wallis and Futuna" style="background-color: rgb(255, 255, 255);">Wallis and Futuna</a></li><li class=""><a data-dk-dropdown-value="EH" data-dk-dropdown-text="Western Sahara" style="background-color: rgb(255, 255, 255);">Western Sahara</a></li><li class=""><a data-dk-dropdown-value="YE" data-dk-dropdown-text="Yemen" style="background-color: rgb(255, 255, 255);">Yemen</a></li><li class=""><a data-dk-dropdown-value="ZM" data-dk-dropdown-text="Zambia" style="background-color: rgb(255, 255, 255);">Zambia</a></li><li class=""><a data-dk-dropdown-value="ZW" data-dk-dropdown-text="Zimbabwe" style="background-color: rgb(255, 255, 255);">Zimbabwe</a></li></ul></div></div><select name="country" id="country" class="REQUIRED userdetails" style="background: rgb(255, 255, 255); display: none;"><option value=""></option><option value="AF">Afghanistan</option><option value="AX">Aland Islands</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island </option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei Darussalam</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="CV">Cabo Verde</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="BQ">Caribbean Netherlands</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CD">Congo, Democratic Republic of the</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CW">Curacao</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CI">Côte dIvoire</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and McDonald Islands</option><option value="VA">Holy See (Vatican)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran, Islamic Republic of</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KP">Korea, Democratic Peoples Republic of</option><option value="KR">Korea, Republic of</option><option value="XK">Kosovo</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Lao Peoples Democratic Republic</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States of</option><option value="MD">Moldova, Republic of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestine</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="BL">Saint Barthelemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin (French Part)</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SX">Sint Maarten (Dutch part)</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="SS">South Sudan</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syrian Arab Republic</option><option value="ST">São Tomé and Príncipe</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania, United Republic of</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB" selected="">United Kingdom</option><option value="US">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="VG">Virgin Islands, British</option><option value="VI">Virgin Islands, U.S.</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select>
+						<input type="hidden" id="country_value" value="GB" style="background-color: rgb(255, 255, 255);" />
+				</span>					
+		</div>
+		<div class="row" id="div_state" style="display: none;">	
+				<span id="error_for_state" class="error_for_field"></span>	
+					<span class="span_label">
+						<label for="state" class="REQUIRED" id="label_state" style="color: rgb(0, 0, 0);">
+State						</label>
+					</span>
+					<span class="span_input">
+						<select name="state" id="state" class="REQUIRED userdetails" style="background: rgb(255, 255, 255);"></select>
+						<input type="hidden" id="state_value" value="" style="background-color: rgb(255, 255, 255);" />
+				</span>					
+		</div>
+		<div class="row" id="div_zip">	
+				<span id="error_for_zip" class="error_for_field"></span>	
+					<span class="span_label">
+						<label for="zip" class="REQUIRED" id="label_zip" style="color: rgb(0, 0, 0);">
+Zip						</label>
+					</span>
+					<span class="span_input">
+    <input type="text" id="zip" name="zip" value="WR5 3DA" maxlength="10" class="REQUIRED" style="background-color: rgb(255, 255, 255);" />
+
+				</span>					
+		</div>
+</div>
+</div>
+	 <div class="userDetails" id="paymentDetails">
+    	<h3 style="color: rgb(0, 0, 0); background: rgb(250, 245, 250);">Select payment option:</h3>
+</div>
+<div class="column" id="right_column">
+    <div class="row">
+        	<label style="color: rgb(0, 0, 0);">Select your payment method:</label>
+        	<select name="payment_method" id="payment_method" style="background: rgb(255, 255, 255);"><option value="cc_card" selected="">Credit Card</option></select>
+    </div>
+    <div class="row">
+    	<div class="logo"></div>
+    </div> 
+</div>
+	    <div class="column" id="left_column"><p class="disclaimer"> The charge will appear on your bank statement as CI Ltd.	
+</p>
+				<span pm="cc_card, dc_card, paydotcom, entropay" sfc="" class="show">
+					<div class="row" id="cc_name_on_card_css">	
+						<span id="error_for_cc_name_on_card" class="error_for_field"></span>		
+						<span class="span_label">
+							<label for="cc_name_on_card" class="REQUIRED" id="label_cc_name_on_card" style="color: rgb(0, 0, 0);">
+Cardholder Name							</label>
+						</span>
+						<span class="span_input">
+							<input type="text" name="cc_name_on_card" id="cc_name_on_card" maxlength="40" title="Cardholder Name" class="REQUIRED show" value="Auto Tester" style="background-color: rgb(255, 255, 255);" />
+						</span>
+					</div>
+				</span>
+				<span pm="cc_card, dc_card, paydotcom, entropay" sfc="" class="show">
+					<div class="row" id="cc_card_number_css">	
+						<span id="error_for_cc_card_number" class="error_for_field"></span>		
+						<span class="span_label">
+							<label for="cc_card_number" class="REQUIRED" id="label_cc_card_number" style="color: rgb(0, 0, 0);">
+Card Number							</label>
+						</span>
+						<span class="span_input">
+								<input type="tel" name="cc_card_number" id="cc_card_number" maxlength="20" title="Card Number" class="REQUIRED show text-label" value="" autocomplete="off" style="background-color: rgb(255, 255, 255);" />									
+						</span>
+					</div>
+				</span>
+				<span pm="cc_card, dc_card, paydotcom, entropay" sfc="" class="show">
+					<div class="row" id="cc_exp_month_css">	
+						<span id="error_for_cc_exp_month" class="error_for_field"></span><span id="error_for_cc_exp_year" class="error_for_field"></span>		
+						<span class="span_label">
+							<label for="cc_exp_month" class="REQUIRED" id="label_cc_exp_month" style="color: rgb(0, 0, 0);">Expiry Date</label>
+						</span>
+						<span class="span_input">
+							<input type="hidden" name="selected_cc_exp_month" id="selected_cc_exp_month" value="" class="show" style="background-color: rgb(255, 255, 255);" />
+							<div class="dk_container dk_theme_default" id="dk_container_cc_exp_month" tabindex=""><a class="dk_toggle" style="width: 100px; color: rgb(255, 255, 255); background-color: rgb(255, 255, 255);"><span class="dk_label"></span></a><div class="dk_options"><ul class="dk_options_inner"></ul></div></div><select name="cc_exp_month" id="cc_exp_month" class="REQUIRED" style="background: rgb(255, 255, 255); display: none;"><option value="" selected="selected"></option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><div class="dk_container dk_theme_default" id="dk_container_cc_exp_year" tabindex=""><a class="dk_toggle" style="width: 100px; color: rgb(255, 255, 255); background-color: rgb(255, 255, 255);"><span class="dk_label"></span></a><div class="dk_options"><ul class="dk_options_inner"></ul></div></div><select name="cc_exp_year" id="cc_exp_year" class="REQUIRED" style="background: rgb(255, 255, 255); display: none;"><option value="" selected="selected"></option><option value="18">2018</option><option value="19">2019</option><option value="20">2020</option><option value="21">2021</option><option value="22">2022</option><option value="23">2023</option><option value="24">2024</option><option value="25">2025</option><option value="26">2026</option><option value="27">2027</option><option value="28">2028</option><option value="29">2029</option><option value="30">2030</option><option value="31">2031</option><option value="32">2032</option><option value="33">2033</option><option value="34">2034</option><option value="35">2035</option><option value="36">2036</option><option value="37">2037</option><option value="38">2038</option><option value="39">2039</option><option value="40">2040</option><option value="41">2041</option><option value="42">2042</option><option value="43">2043</option><option value="44">2044</option><option value="45">2045</option><option value="46">2046</option><option value="47">2047</option><option value="48">2048</option><option value="49">2049</option><option value="50">2050</option><option value="51">2051</option><option value="52">2052</option><option value="53">2053</option><option value="54">2054</option><option value="55">2055</option><option value="56">2056</option><option value="57">2057</option><option value="58">2058</option></select>
+						</span>
+					</div>
+				</span>
+				<span pm="cc_card, dc_card, paydotcom, entropay" sfc="" class="show">
+					<div class="row" id="cc_exp_year_css">	
+								
+						<span class="span_label">
+							<label for="cc_exp_year" class="REQUIRED" id="label_cc_exp_year" style="display: none; color: rgb(0, 0, 0);">
+Expiration Year							</label>
+						</span>
+						<span class="span_input">
+							<input type="hidden" name="selected_cc_exp_year" id="selected_cc_exp_year" value="" class="show" style="background-color: rgb(255, 255, 255);" />
+							
+						</span>
+					</div>
+				</span>
+				<span pm="QIWIWALLET, QIWIWALLETUSD, apmgw_QIWI, apmgw_QIWI" sfc="" class="hide">
+					<div class="row" id="qiwi_phonenumber_css">	
+						<span id="error_for_qiwi_phonenumber" class="error_for_field"></span>		
+						<span class="span_label">
+							<label for="qiwi_phonenumber" class="REQUIRED" id="label_qiwi_phonenumber" style="color: rgb(0, 0, 0);">
+QIWI phone number							</label>
+						</span>
+						<span class="span_input">
+							<input type="text" name="qiwi_phonenumber" id="qiwi_phonenumber" maxlength="15" title="QIWI phone number" class="REQUIRED hide" value="" minlenght="1" style="background-color: rgb(255, 255, 255);" />
+						</span>
+					</div>
+				</span>
+				<span pm="NETSWIPE" sfc="" class="hide">
+					<div class="row" id="netswipe_cardholder_css">	
+						<span id="error_for_netswipe_cardholder" class="error_for_field"></span>		
+						<span class="span_label">
+							<label for="netswipe_cardholder" class="REQUIRED" id="label_netswipe_cardholder" style="color: rgb(0, 0, 0);">
+Cardholder Name							</label>
+						</span>
+						<span class="span_input">
+							<input type="text" name="netswipe_cardholder" id="netswipe_cardholder" maxlength="70" title="Cardholder Name" class="REQUIRED hide" value="" style="background-color: rgb(255, 255, 255);" />
+						</span>
+					</div>
+				</span>
+				<span pm="giro" sfc="" class="hide">
+					<div class="row" id="giro_accountnumber_css">	
+						<span id="error_for_giro_accountnumber" class="error_for_field"></span>		
+						<span class="span_label">
+							<label for="giro_accountnumber" class="REQUIRED" id="label_giro_accountnumber" style="color: rgb(0, 0, 0);">
+giro_accountnumber							</label>
+						</span>
+						<span class="span_input">
+							<input type="text" name="giro_accountnumber" id="giro_accountnumber" maxlength="70" title="giro_accountnumber" class="REQUIRED hide" value="" style="background-color: rgb(255, 255, 255);" />
+						</span>
+					</div>
+				</span>
+				<span pm="giro" sfc="" class="hide">
+					<div class="row" id="giro_bankcode_css">	
+						<span id="error_for_giro_bankcode" class="error_for_field"></span>		
+						<span class="span_label">
+							<label for="giro_bankcode" class="REQUIRED" id="label_giro_bankcode" style="color: rgb(0, 0, 0);">
+giro_bankcode							</label>
+						</span>
+						<span class="span_input">
+							<input type="text" name="giro_bankcode" id="giro_bankcode" maxlength="70" title="giro_bankcode" class="REQUIRED hide" value="" style="background-color: rgb(255, 255, 255);" />
+						</span>
+					</div>
+				</span>
+				<span pm="giro" sfc="" class="hide">
+					<div class="row" id="giro_birthdate_css">	
+						<span id="error_for_giro_birthdate" class="error_for_field"></span>		
+						<span class="span_label">
+							<label for="giro_birthdate" class="REQUIRED" id="label_giro_birthdate" style="color: rgb(0, 0, 0);">
+giro_birthdate							</label>
+						</span>
+						<span class="span_input">
+							<input type="text" name="giro_birthdate" id="giro_birthdate" maxlength="70" title="giro_birthdate" class="REQUIRED hide" value="" style="background-color: rgb(255, 255, 255);" />
+						</span>
+					</div>
+				</span>
+		</div>
+  
+
+  </div>
+ </div>
+ 
+
+	   
+
+ 
+	<p class="terms_conditions">
+By clicking the "Continue" button, I agree to Safecharge Terms and Conditions.	</p>
+<div class="buttons">
+	<input type="button" name="btnBack" id="btn_back" value="Back" alt="Back" onclick="submitForm('back.do');" style="color: rgb(255, 255, 255); background: rgb(83, 151, 0); border-color: rgb(255, 255, 255);" />
+	<input type="button" name="btnCancel" id="btn_cancel" value="Cancel" alt="Cancel" onclick="submitForm('cancel.do');" style="color: rgb(255, 255, 255); background: rgb(83, 151, 0); border-color: rgb(255, 255, 255);" />		
+	
+		<input type="button" name="btnSubmit" id="continueButton" class="continue" value="Register" alt="Submit" onclick="submitForm();" style="color: rgb(255, 255, 255); background: rgb(83, 151, 0); border-color: rgb(255, 255, 255);" />
+</div>
+  
+
+ 
+  
+
+ <div class="terms_conditions">
+  
+<a id="termsAndConditionsLink" href="#" target="_blank" alt="Terms and Conditions" style="color: rgb(255, 255, 255);">Terms and Conditions</a>  
+
+  |
+  
+<a id="privacyPolicyLink" href="#" target="_blank" alt="Privacy Policy" style="color: rgb(255, 255, 255);">Privacy Policy</a>  
+
+ </div>
+</div>
+<!-- Content :: End -->
+		</form>
+<script type="text/javascript">
+	var msg_required_filed = "This field is required.";
+	var msg_minlength = "Please enter at least {0} characters.";
+	var msg_maxlength = "Please enter at most {0} characters";
+	var msg_exactlength = "{0} must be exact {1} symbols";
+	var msg_invalid_email = "Please enter a valid email address.";
+	var msg_no_digits = "Please do not enter digits.";
+	var msg_digits_only = "Please enter only digits.";
+	var msg_invalid_phone = "Phone is invalid.";
+	var msg_invalid_city = "Invalid city";
+	var msg_emails_do_not_match = "E-mail and confirm e-mail are different.";
+	var msg_invalid_expiration_year = "Please enter valid expiration year.";
+	var msg_invalid_expiration_month = "Please enter valid expiration month.";
+	var msg_invalid_creditcard = "Please enter a valid credit card number.";
+	var msg_zipcode = "ZIP code can contain only characters, digits or - ";
+	var msg_invalid_open_amount = "Invalid amount!";
+    var msg_not_in_range_open_amount = "Amount not in range!";
+    var msg_open_amount_format = "Invalid amount format!";
+    var msg_invalid_cvv_from_gw = "CVV2 is invalid.";
+    var msg_invalid_israel_card_holder_id = "Invalid Israeli card holder ID";
+    var msg_invalid_first_name = "Please enter valid first name";
+    var msg_invalid_last_name = "Please enter valid last name";
+    var msg_invalid_name_on_card = "Please enter valid name on card";
+    var msg_netteler_account_id_validation = "Your Account ID must be 12 digits or a valid email address";
+    var msg_netteler_secure_id_validation = "Your Secure ID must be 6 digits";
+    var please_wait = "&lt;h1&gt;Please wait...&lt;/h1&gt;";
+	var personalIDLabel = {BR: 'CPF / CNPJ', MX : 'CURP / RFC / IFE', CL : 'RUT', CO : 'CC', PE : 'DNI', UY : 'CI', AR : 'DNI'};
+
+    var paydotcom_url = "https://secure.pay.com/#/en/merchant-registration-step1";
+    var paydotcom_msg = "You will now be redirected to PAY.COM where you can instantly create a new account.";
+    
+    var invalid_cardholder_name  = "Invalid cardholder name.";
+    var invalid_cvv_exact_digits = "The field must be exactly {0} digits.";
+    var invalid_cvv_enter_cvv    = "Please enter 3 or 4 digits.";
+	
+    var no_payment_options    = "No available payment options";
+
+    var form_id = "";
+    if(jQuery.validator){
+    	jQuery.extend(jQuery.validator.messages, {
+		    max : "Please enter a value less than or equal to {0}.",
+			min : "Please enter a value greater than or equal to {0}.",
+			number : "Please enter a valid number."
+		});
+    }
+    $(document).ready(function() {
+        if (document.forms[0] != undefined) {
+	        // There is a bug with jQuery 1.7.2 which affects IE7 so please don't change to the following:
+            // form_id = $('#PPPParametersForm').getAttribute('id');
+            form_id = document.forms[0].id;
+        }
+    });
+</script>
+</body></html>
