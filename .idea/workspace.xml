@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70facbe1-5a99-4283-b4c0-a8d19116d3ae" name="Default Changelist" comment="" />
+    <list default="true" id="70facbe1-5a99-4283-b4c0-a8d19116d3ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/Drivers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/enums/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/OrderedRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/desktop/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/desktop/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/desktop/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/desktop/Registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/mobile/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/mobile/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/mobile/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/mobile/Registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/enums/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/OrderedRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/OrderedRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -60,29 +84,39 @@
     <session id="1807399031">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="389" />
+          <entry key="capabilities" value="12" />
+          <entry key="gradle" value="1" />
+          <entry key="java" value="1138" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="389" />
+          <entry key="Groovy" value="1" />
+          <entry key="JAVA" value="1138" />
+          <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="capabilities" value="1" />
+          <entry key="gradle" value="1" />
+          <entry key="java" value="22" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="Groovy" value="1" />
+          <entry key="JAVA" value="22" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
@@ -91,10 +125,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="106" column="41" lean-forward="true" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/service/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#118#119#0" expanded="true" />
+                <element signature="e#193#194#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="548">
+              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,10 +159,62 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/enums/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/service/Drivers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-chrome-driver/3.141.5/b7189fcb53e45dcce1f02cf71bfd7d1a38883fed/selenium-chrome-driver-3.141.5-sources.jar!/org/openqa/selenium/chrome/ChromeDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1620">
+              <caret line="145" column="9" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+              <folding>
+                <element signature="e#5520#5521#0" expanded="true" />
+                <element signature="e#5592#5593#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/AddCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-257">
+              <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.141.5/cc786f09768f5af2220ccbff671dc84a40f083b6/selenium-remote-driver-3.141.5-sources.jar!/org/openqa/selenium/remote/DesiredCapabilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="146" column="50" lean-forward="true" selection-start-line="146" selection-start-column="50" selection-end-line="146" selection-end-column="50" />
+            <state relative-caret-position="90">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding>
                 <element signature="e#4944#4945#0" expanded="true" />
                 <element signature="e#5022#5023#0" expanded="true" />
@@ -116,77 +224,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.141.5/cc786f09768f5af2220ccbff671dc84a40f083b6/selenium-remote-driver-3.141.5-sources.jar!/org/openqa/selenium/remote/BrowserType.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/video.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1303">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/SelenideConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-              <folding>
-                <element signature="e#6753#6754#0" expanded="true" />
-                <element signature="e#6777#6778#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/Browsers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/Browser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-              <folding>
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3048">
-              <caret line="1104" column="19" selection-start-line="1104" selection-start-column="19" selection-end-line="1104" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-chrome-driver/3.141.5/b7189fcb53e45dcce1f02cf71bfd7d1a38883fed/selenium-chrome-driver-3.141.5-sources.jar!/org/openqa/selenium/chrome/ChromeOptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -209,6 +250,9 @@
       <replace>dCrlat</replace>
       <replace>public static final String</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -400,9 +444,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6174214763000" />
+        <entry key="$PROJECT_DIR$" value="6174370111000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2045064870" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="622311278" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3963333358" />
       </map>
@@ -609,16 +653,21 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/desktop/Registration_Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/desktop/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/desktop/AddCard.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/service/config.js" />
         <option value="$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/desktop/Registration.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/mobile/AddCard.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/enums/Constants.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/Chrome.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/capabilities" />
+        <option value="$PROJECT_DIR$/src/test/java/CustomWebDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/Drivers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/Drivers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/enums/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" />
       </list>
     </option>
   </component>
@@ -626,12 +675,13 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -648,6 +698,12 @@
               <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="bpp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bpp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -656,6 +712,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bpp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bpp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
@@ -665,16 +737,54 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bpp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.codeborne:selenide:5.0.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.codeborne:selenide:5.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="selenide-5.0.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.codeborne:selenide:5.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="selenide-5.0.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="selenide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.codeborne:selenide:5.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="selenide-5.0.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543593575583" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544803272785" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -682,6 +792,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/tests/mobile" />
       <recent name="$PROJECT_DIR$/src/main" />
@@ -854,10 +967,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Registration" />
-        <item itemvalue="JUnit.Registration.getEvents" />
-        <item itemvalue="JUnit.Registration.login" />
-        <item itemvalue="JUnit.Registration.registration (1)" />
         <item itemvalue="JUnit.Login.login" />
+        <item itemvalue="JUnit.Registration.registration (1)" />
+        <item itemvalue="JUnit.Registration.login" />
+        <item itemvalue="JUnit.Registration.getEvents" />
       </list>
     </recent_temporary>
   </component>
@@ -875,34 +988,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Registration - 2018.11.30 at 16h 57m 10s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 10m 47s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.11.30 at 16h 59m 10s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 11m 51s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.11.30 at 16h 59m 37s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 12m 44s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.11.30 at 17h 00m 40s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 13m 19s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.11.30 at 17h 01m 43s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 19m 57s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.11.30 at 17h 10m 41s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 21m 16s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.11.30 at 17h 11m 18s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 23m 21s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.11.30 at 17h 32m 38s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 24m 09s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.11.30 at 17h 52m 47s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 26m 11s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.11.30 at 17h 53m 44s.xml">
+    <history-entry file="Registration - 2018.12.14 at 17h 27m 24s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -910,7 +1023,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -919,14 +1032,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37951806" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37951806" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
@@ -944,10 +1057,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/service/APIClient.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/service/APIException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
@@ -958,23 +1083,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/service/JSONRender.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/service/TestData.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/service/TestResultsListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderedRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/OrderedRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,6 +1094,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,20 +1116,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/desktop/AddCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1025,62 +1126,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/AddCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" selection-start-line="12" selection-end-line="18" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/config.js">
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Chrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/SelenideConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-          <folding>
-            <element signature="e#6753#6754#0" expanded="true" />
-            <element signature="e#6777#6778#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Chrome.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/Browsers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1092,10 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,13 +1169,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.141.5/cc786f09768f5af2220ccbff671dc84a40f083b6/selenium-remote-driver-3.141.5-sources.jar!/org/openqa/selenium/remote/BrowserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.141.5/2389197ede609d79c12de4a628374e0f69c6c1c4/selenium-api-3.141.5-sources.jar!/org/openqa/selenium/MutableCapabilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="77" column="14" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/video.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/WebDriverRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="137" column="29" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/SelenideConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="324" column="22" selection-start-line="324" selection-start-column="22" selection-end-line="324" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/capabilities" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CustomWebDriver.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/enums/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-chrome-driver/3.141.5/b7189fcb53e45dcce1f02cf71bfd7d1a38883fed/selenium-chrome-driver-3.141.5-sources.jar!/org/openqa/selenium/chrome/ChromeDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="145" column="9" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+          <folding>
+            <element signature="e#5520#5521#0" expanded="true" />
+            <element signature="e#5592#5593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.141.5/cc786f09768f5af2220ccbff671dc84a40f083b6/selenium-remote-driver-3.141.5-sources.jar!/org/openqa/selenium/remote/DesiredCapabilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="146" column="50" lean-forward="true" selection-start-line="146" selection-start-column="50" selection-end-line="146" selection-end-column="50" />
+        <state relative-caret-position="90">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding>
             <element signature="e#4944#4945#0" expanded="true" />
             <element signature="e#5022#5023#0" expanded="true" />
@@ -1134,20 +1249,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.141.5/cc786f09768f5af2220ccbff671dc84a40f083b6/selenium-remote-driver-3.141.5-sources.jar!/org/openqa/selenium/remote/BrowserType.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/AddCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="210">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-257">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/Drivers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="548">
+          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="106" column="41" lean-forward="true" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1203,7 +1349,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>bpp_main|bpp</last-edited>
+          <last-edited>bpp_test|bpp</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

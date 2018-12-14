@@ -29,7 +29,6 @@ public class Login extends BaseTest {
     @Test
     @Order(order = 1)
     public void login() {
-        open(BASE_URL);
         $(dCrlat("signInButton")).click();
         $(dCrlat("username")).setValue("Auto_tester358");
         $(dCrlat("password")).setValue("123456test");
@@ -48,7 +47,7 @@ public class Login extends BaseTest {
         $(SUCCESS_MESSAGE).should(Condition.text("Your card was added successfully."));
     }
 
-//    @Test
+    @Test
     @Order(order = 2)
     public void addCard(){
 
@@ -65,7 +64,7 @@ public class Login extends BaseTest {
 
     }
 
-//    @Test
+    @Test
     @Order(order = 2)
     public void deposit() {
         {

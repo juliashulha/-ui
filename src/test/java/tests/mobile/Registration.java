@@ -1,16 +1,20 @@
 package tests.mobile;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.path.json.JsonPath;
 import com.jayway.restassured.response.Response;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import service.Order;
 import tests.BaseTest;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.switchTo;
+import static com.codeborne.selenide.WebDriverRunner.source;
+import static com.codeborne.selenide.WebDriverRunner.url;
 import static com.jayway.restassured.RestAssured.given;
 import static enums.Constants.BASE_URL;
 import static service.Utils.dCrlat;
@@ -44,7 +48,7 @@ public class Registration extends BaseTest {
     public static final String ACCOUNT_CURRENCY = dCrlat("selectCurrency");
     public static final String LIMIT_PERIOD = dCrlat("filterName");
     public static final String DEPOSIT_LIMIT = ".select-no-margin > .custom-select > select";
-    public static final String TERMS_COND = dCrlat("label");
+    public static final String TERMS_COND ="#registrationMobile3 > div:nth-child(7) > div > div > div.col-xs-1.col-md-1 > div > label";
     public static final String COMPLETE_REGISTRATION = dCrlat("reg.submit");
     public static final String SPLASH_CONTENT = ".splash-content";
     public static final String SAVE_PREFERENCES = (".btn");
@@ -75,7 +79,9 @@ public class Registration extends BaseTest {
 
     @Test
     @Order(order = 1)
-    public void registration(){
+    public void registration() throws InterruptedException {
+
+        System.out.println(USERNAME_V);
 
         open(BASE_URL);
         $(JOIN_NOW_BUTTON).click();
@@ -97,11 +103,11 @@ public class Registration extends BaseTest {
         $(NEXT_STEP).click();
         $(USERNAME).setValue(USERNAME_V);
         $(PASSWORD).setValue("123456test");
-        $(DEPOSIT_LIMIT).selectOption("75000");
         $(TERMS_COND).click();
         $(COMPLETE_REGISTRATION).click();
-        $(CHECKBOX_ALL).click();
-        $(SAVE_PREFERENCES).click();
+//        $(url()).shouldHave(Condition.attribute("/deposit/addcard"));
+//        $(CHECKBOX_ALL).click();
+//        $(SAVE_PREFERENCES).click();
 
     }
 
@@ -113,36 +119,36 @@ public class Registration extends BaseTest {
         $(dCrlat("username")).setValue(USERNAME_V);
         $(dCrlat("password")).setValue("123456test");
         $("#log-form > form > div:nth-child(7) > button").click();
-        $(dUAT("popUpText")).isDisplayed();
-        $(dUAT("popUpText")).shouldHave(Condition.text(USERNAME_V));
-        $(dUAT("popUpButton")).click();
-        open("/deposit/addcard");
-        switchTo().frame(FRAME);
-        $(CARDHOLDER_NAME).setValue("Auto Tester");
-        $(CARD_NUMBER).setValue("Auto 4532279700741928");
-        $(EXPIRY_MONTH).selectOption("12");
-        $(EXPIRY_YEAR).selectOption("2021");
-        $(REGISTER).click();
-        switchTo().defaultContent();
-        $(SUCCESS_MESSAGE).should(Condition.text("Your card was added successfully."));
-
-        open("/deposit/registered");
-        $(AMOUNT).setValue("6.55");
-        $(CVV).setValue("123");
-        $(SUBMIT).click();
-        $(DIALOG).click();
-        $(SUCCESS_MESSAGE).shouldHave(Condition.text("£6.55"));
+//        $(dUAT("popUpText")).isDisplayed();
+//        $(dUAT("popUpText")).shouldHave(Condition.text(USERNAME_V));
+//        $(dUAT("popUpButton")).click();
+//        open("/deposit/addcard");
+//        switchTo().frame(FRAME);
+//        $(CARDHOLDER_NAME).setValue("Auto Tester");
+//        $(CARD_NUMBER).setValue("Auto 4532279700741928");
+//        $(EXPIRY_MONTH).selectOption("12");
+//        $(EXPIRY_YEAR).selectOption("2021");
+//        $(REGISTER).click();
+//        switchTo().defaultContent();
+//        $(SUCCESS_MESSAGE).should(Condition.text("Your card was added successfully."));
+//
+//        open("/deposit/registered");
+//        $(AMOUNT).setValue("6.55");
+//        $(CVV).setValue("123");
+//        $(SUBMIT).click();
+//        $(DIALOG).click();
+//        $(SUCCESS_MESSAGE).shouldHave(Condition.text("£6.55"));
 //        $(BALANCE).should(Condition.text("£6.55"));
-
-        open("/home/multiples");
-        $("[class=\"lc-offer__link\"]").find("");
+//
+//        open("/home/multiples");
+//        $("[class=\"lc-offer__link\"]").find("");
     }
 
 //    @Test
     @Order(order = 3)
     public void deposit(){
 
-        open("/deposit/registered");
+        open(BASE_URL+ "/deposit/registered");
         $(AMOUNT).setValue("6.55");
         $(CVV).setValue("123");
         $(SUBMIT).click();
