@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70facbe1-5a99-4283-b4c0-a8d19116d3ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/Drivers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/enums/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/service/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/service/OrderedRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/service/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/service/Drivers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/service/Drivers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/desktop/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/desktop/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/desktop/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/desktop/Registration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/mobile/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/mobile/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/mobile/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/mobile/Registration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chromedriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/enums/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/OrderedRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/OrderedRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/mobile/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/Drivers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -94,13 +79,13 @@
         <counts>
           <entry key="capabilities" value="12" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="1138" />
+          <entry key="java" value="1795" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="1138" />
+          <entry key="JAVA" value="1795" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
@@ -108,14 +93,14 @@
         <counts>
           <entry key="capabilities" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="22" />
+          <entry key="java" value="24" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="22" />
+          <entry key="JAVA" value="24" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
         </counts>
@@ -127,8 +112,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="106" column="41" lean-forward="true" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+            <state relative-caret-position="586">
+              <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+              <folding>
+                <marker date="1545061894158" expanded="true" signature="4857:4890" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/service/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="180">
+              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
               <folding>
                 <element signature="e#118#119#0" expanded="true" />
                 <element signature="e#193#194#0" expanded="true" />
@@ -147,22 +135,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/Selenide.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+            <state relative-caret-position="156">
+              <caret line="537" column="38" selection-start-line="537" selection-start-column="38" selection-end-line="537" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#19696#19697#0" expanded="true" />
+                <element signature="e#19752#19753#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/enums/Constants.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="67" />
+            <state relative-caret-position="620">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1542#1543#0" expanded="true" />
+                <element signature="e#1587#1588#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -668,10 +662,11 @@
         <option value="$PROJECT_DIR$/src/test/java/enums/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/Utils.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -746,35 +741,6 @@
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="mobile" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.codeborne:selenide:5.0.1" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.codeborne:selenide:5.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenide-5.0.1.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.codeborne:selenide:5.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenide-5.0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="selenide" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.codeborne:selenide:5.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenide-5.0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -784,7 +750,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544803272785" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545062122361" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -967,8 +933,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Registration" />
-        <item itemvalue="JUnit.Login.login" />
         <item itemvalue="JUnit.Registration.registration (1)" />
+        <item itemvalue="JUnit.Login.login" />
         <item itemvalue="JUnit.Registration.login" />
         <item itemvalue="JUnit.Registration.getEvents" />
       </list>
@@ -988,42 +954,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Registration - 2018.12.14 at 17h 10m 47s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 45m 51s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.14 at 17h 11m 51s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 46m 13s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.14 at 17h 12m 44s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 47m 41s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.14 at 17h 13m 19s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 48m 01s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.14 at 17h 19m 57s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 48m 22s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.14 at 17h 21m 16s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 48m 59s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.14 at 17h 23m 21s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 49m 38s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.14 at 17h 24m 09s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 50m 27s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.14 at 17h 26m 11s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 51m 56s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.14 at 17h 27m 24s.xml">
+    <history-entry file="Registration - 2018.12.17 at 17h 54m 30s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="829" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1032,17 +998,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37951806" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47761193" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32891566" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3283582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1056,18 +1022,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java</url>
-          <line>105</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/service/APIClient.java" />
@@ -1209,17 +1163,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/capabilities" />
     <entry file="file://$PROJECT_DIR$/src/test/java/CustomWebDriver.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#118#119#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/enums/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1263,13 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/service/Drivers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -1282,18 +1218,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+        <state relative-caret-position="620">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/5.0.1/ad00dc46f375211bfc28054cf62f9254e7d95064/selenide-5.0.1-sources.jar!/com/codeborne/selenide/Selenide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="537" column="38" selection-start-line="537" selection-start-column="38" selection-end-line="537" selection-end-column="38" />
+          <folding>
+            <element signature="e#19696#19697#0" expanded="true" />
+            <element signature="e#19752#19753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="106" column="41" lean-forward="true" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+        <state relative-caret-position="586">
+          <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+          <folding>
+            <marker date="1545061894158" expanded="true" signature="4857:4890" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

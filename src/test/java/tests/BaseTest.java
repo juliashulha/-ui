@@ -3,6 +3,7 @@ package tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -52,6 +53,5 @@ abstract public class BaseTest extends Drivers {
         @After
         public void cleanUp() {
             clearBrowserCookies();
-            closeDriver();
         }
     }

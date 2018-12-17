@@ -34,7 +34,7 @@ public class Drivers {
     }
 
 
-    public void closeDriver() {
+    public static void closeDriver() {
         if (driver != null) {
             driver.close();
         }

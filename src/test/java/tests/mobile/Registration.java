@@ -6,9 +6,14 @@ import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.path.json.JsonPath;
 import com.jayway.restassured.response.Response;
 import org.junit.Test;
+import org.junit.experimental.theories.Theories;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import service.Order;
+import service.OrderedRunner;
 import tests.BaseTest;
+
+import javax.crypto.Mac;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -21,6 +26,7 @@ import static service.Utils.dCrlat;
 import static service.Utils.dUAT;
 import static service.Utils.genRandom;
 
+@RunWith(OrderedRunner.class)
 public class Registration extends BaseTest {
 
     public Response response;
@@ -35,21 +41,25 @@ public class Registration extends BaseTest {
     public static final String FIND = dCrlat("reg.findBtn");
     public static final String MOBILE_NUMBER = dCrlat("mobile");
     public static final String EMAIl_ADDRESS = dCrlat("email");
-    public static final String TITLE = dCrlat("socialTitle");
     public static final String ADDRESS1 = dCrlat("address1");
     public static final String ADDRESS2 = dCrlat("address2");
     public static final String ADDRESS3 = dCrlat("address3");
     public static final String CITY = dCrlat("city");
-    public static final String CONFIRM_EMAIL = dCrlat("emailVerification");
     public static final String NEXT_STEP = dCrlat("nextStep");
     public static final String USERNAME = dCrlat("userName");
     public static final String PASSWORD = dCrlat("userPassword");
-    public static final String CONFIRM_PASSWORD = dCrlat("passwordVerify");
-    public static final String ACCOUNT_CURRENCY = dCrlat("selectCurrency");
-    public static final String LIMIT_PERIOD = dCrlat("filterName");
-    public static final String DEPOSIT_LIMIT = ".select-no-margin > .custom-select > select";
-    public static final String TERMS_COND ="#registrationMobile3 > div:nth-child(7) > div > div > div.col-xs-1.col-md-1 > div > label";
+    public static final String TERMS_COND = "input[name='termsAndConditions']";
     public static final String COMPLETE_REGISTRATION = dCrlat("reg.submit");
+    public static final String MY_BET_BUTTON = dCrlat("myBetsBtn");
+    public static final String TITLE_TEXT = dCrlat("titleText");
+    public static final String POPUP_BUTTON = dCrlat("acceptTermsButton");
+
+    public static final String CLOSE_WELCOME_POPUP = String.valueOf(By.xpath("//*[@id=\"close-icon\"]/path"));
+    public static final String TUTORIAL_OVERLAY = dCrlat("tutorialOverlay");
+    public static final String CLOSE_TUTORIAL_BUTTON = dCrlat("closeTutorialBtn");
+    public static final String WELCOME_POPUP_TEXT = dCrlat("text");
+
+
     public static final String SPLASH_CONTENT = ".splash-content";
     public static final String SAVE_PREFERENCES = (".btn");
     public static final String CHECKBOX_ALL = dCrlat("label.all");
@@ -65,14 +75,14 @@ public class Registration extends BaseTest {
     String CARD_NUMBER = "#cc_card_number";
     String EXPIRY_MONTH = "#cc_exp_month";
     String EXPIRY_YEAR = "#cc_exp_year";
-    String REGISTER = "#continueButton";
+    String CONTINUE_BUTTON = String.valueOf(By.xpath("//*[@id=\"continueButton\"]"));
     String SUCCESS_MESSAGE = dCrlat("infoPanel.message");
 
 
     //Deposit
      String AMOUNT = dCrlat("enterAmount");
      String CVV = dCrlat("cvv2");
-     String SUBMIT = dCrlat("submit");
+     String SUBMIT_DEPOSIT = dCrlat("submit");
      String DIALOG = dCrlat("dialog.accept");
      String BALANCE = dCrlat("balanceAmount");
 
@@ -103,8 +113,13 @@ public class Registration extends BaseTest {
         $(NEXT_STEP).click();
         $(USERNAME).setValue(USERNAME_V);
         $(PASSWORD).setValue("123456test");
-        $(TERMS_COND).click();
+        $(TERMS_COND).parent().click();
         $(COMPLETE_REGISTRATION).click();
+
+        Thread.sleep(5000);
+
+//        $(TITLE_TEXT).shouldBe(Condition.attribute("DEPOSIT"));
+//        $(MY_BET_BUTTON).click();
 //        $(url()).shouldHave(Condition.attribute("/deposit/addcard"));
 //        $(CHECKBOX_ALL).click();
 //        $(SAVE_PREFERENCES).click();
@@ -113,45 +128,46 @@ public class Registration extends BaseTest {
 
     @Test
     @Order(order = 2)
-    public void login() {
+    public void login(){
         open(BASE_URL);
         $(dCrlat("signInButton")).click();
         $(dCrlat("username")).setValue(USERNAME_V);
         $(dCrlat("password")).setValue("123456test");
         $("#log-form > form > div:nth-child(7) > button").click();
-//        $(dUAT("popUpText")).isDisplayed();
-//        $(dUAT("popUpText")).shouldHave(Condition.text(USERNAME_V));
-//        $(dUAT("popUpButton")).click();
-//        open("/deposit/addcard");
-//        switchTo().frame(FRAME);
-//        $(CARDHOLDER_NAME).setValue("Auto Tester");
-//        $(CARD_NUMBER).setValue("Auto 4532279700741928");
-//        $(EXPIRY_MONTH).selectOption("12");
-//        $(EXPIRY_YEAR).selectOption("2021");
-//        $(REGISTER).click();
-//        switchTo().defaultContent();
-//        $(SUCCESS_MESSAGE).should(Condition.text("Your card was added successfully."));
-//
-//        open("/deposit/registered");
-//        $(AMOUNT).setValue("6.55");
-//        $(CVV).setValue("123");
-//        $(SUBMIT).click();
-//        $(DIALOG).click();
-//        $(SUCCESS_MESSAGE).shouldHave(Condition.text("£6.55"));
-//        $(BALANCE).should(Condition.text("£6.55"));
-//
-//        open("/home/multiples");
-//        $("[class=\"lc-offer__link\"]").find("");
+//        $(POPUP_BUTTON).isDisplayed();
+//        $(CLOSE_WELCOME_POPUP).click();
+
+        $(WELCOME_POPUP_TEXT).isDisplayed();
+        $(WELCOME_POPUP_TEXT).shouldHave(Condition.text(USERNAME_V));
+//        $(TUTORIAL_OVERLAY).isDisplayed();
+//        $(CLOSE_TUTORIAL_BUTTON).click();
+
+    }
+        @Test
+        @Order(order = 3)
+        public void addCard () throws InterruptedException {
+            login();
+            open(BASE_URL + "/deposit/addcard");
+            switchTo().frame(FRAME);
+            $(CARDHOLDER_NAME).setValue("Auto Tester");
+            $(CARD_NUMBER).setValue("Auto 4532279700741928");
+            $(EXPIRY_MONTH).selectOption("12");
+            $(EXPIRY_YEAR).selectOption("2021");
+            $(CONTINUE_BUTTON).click();
+            Thread.sleep(2000);
+            switchTo().defaultContent();
+            Thread.sleep(2000);
+            $(SUCCESS_MESSAGE).should(Condition.text("Your card was added successfully."));
     }
 
 //    @Test
-    @Order(order = 3)
+    @Order(order = 4)
     public void deposit(){
 
         open(BASE_URL+ "/deposit/registered");
         $(AMOUNT).setValue("6.55");
         $(CVV).setValue("123");
-        $(SUBMIT).click();
+        $(SUBMIT_DEPOSIT).click();
         $(DIALOG).click();
         $(SUCCESS_MESSAGE).shouldHave(Condition.text("£6.55"));
         $(BALANCE).should(Condition.text("£6.55"));
