@@ -3,12 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="70facbe1-5a99-4283-b4c0-a8d19116d3ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/service/Drivers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/service/Drivers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/mobile/Registration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/Drivers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/desktop/AddCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/desktop/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/desktop/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/mobile/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/mobile/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/mobile/QuickDeposit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/mobile/QuickDeposit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/mobile/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/tests/mobile/Registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/desktop/AddCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/desktop/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/desktop/Registration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -79,13 +84,13 @@
         <counts>
           <entry key="capabilities" value="12" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="1795" />
+          <entry key="java" value="2155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="1795" />
+          <entry key="JAVA" value="2155" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
@@ -93,14 +98,14 @@
         <counts>
           <entry key="capabilities" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="24" />
+          <entry key="java" value="25" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="25" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
         </counts>
@@ -112,10 +117,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+            <state relative-caret-position="2010">
+              <caret line="157" column="27" selection-start-line="157" selection-end-line="158" />
               <folding>
-                <marker date="1545061894158" expanded="true" signature="4857:4890" ph="..." />
+                <marker date="1545152020179" expanded="true" signature="4850:4883" ph="..." />
+                <marker date="1545152020179" expanded="true" signature="6345:6479" ph="..." />
               </folding>
             </state>
           </provider>
@@ -174,23 +180,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-chrome-driver/3.141.5/b7189fcb53e45dcce1f02cf71bfd7d1a38883fed/selenium-chrome-driver-3.141.5-sources.jar!/org/openqa/selenium/chrome/ChromeDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="145" column="9" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
-              <folding>
-                <element signature="e#5520#5521#0" expanded="true" />
-                <element signature="e#5592#5593#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/AddCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="-17">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -198,8 +191,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-257">
-              <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+            <state relative-caret-position="279">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,8 +216,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -645,10 +644,8 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/Registration_Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/Registration.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/desktop/Registration_Page.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/desktop/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/desktop/AddCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/config.js" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/desktop/Registration.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/mobile/AddCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/enums/Constants.java" />
@@ -658,11 +655,13 @@
         <option value="$PROJECT_DIR$/src/test/java/CustomWebDriver.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Drivers.java" />
         <option value="$PROJECT_DIR$/src/test/java/service/Drivers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/enums/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" />
         <option value="$PROJECT_DIR$/src/test/java/service/Utils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/desktop/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java" />
       </list>
     </option>
   </component>
@@ -750,7 +749,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545062122361" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545152034588" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -787,22 +786,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.Registration">
-    <configuration name="Login.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bpp_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.mobile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.mobile" />
-      <option name="MAIN_CLASS_NAME" value="tests.mobile.Login" />
-      <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Registration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bpp_test" />
       <extension name="coverage">
@@ -813,6 +796,38 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests.mobile" />
       <option name="MAIN_CLASS_NAME" value="tests.mobile.Registration" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Registration.addCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bpp_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.mobile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.mobile" />
+      <option name="MAIN_CLASS_NAME" value="tests.mobile.Registration" />
+      <option name="METHOD_NAME" value="addCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Registration.deposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bpp_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.mobile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.mobile" />
+      <option name="MAIN_CLASS_NAME" value="tests.mobile.Registration" />
+      <option name="METHOD_NAME" value="deposit" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -828,22 +843,6 @@
       <option name="PACKAGE_NAME" value="tests.mobile" />
       <option name="MAIN_CLASS_NAME" value="tests.mobile.Registration" />
       <option name="METHOD_NAME" value="getEvents" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Registration.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bpp_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.mobile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.mobile" />
-      <option name="MAIN_CLASS_NAME" value="tests.mobile.Registration" />
-      <option name="METHOD_NAME" value="login" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -924,19 +923,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Login.login" />
       <item itemvalue="JUnit.Registration.registration (1)" />
       <item itemvalue="JUnit.Registration" />
-      <item itemvalue="JUnit.Registration.login" />
+      <item itemvalue="JUnit.Registration.addCard" />
+      <item itemvalue="JUnit.Registration.deposit" />
       <item itemvalue="JUnit.Registration.getEvents" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Registration" />
-        <item itemvalue="JUnit.Registration.registration (1)" />
-        <item itemvalue="JUnit.Login.login" />
-        <item itemvalue="JUnit.Registration.login" />
+        <item itemvalue="JUnit.Registration.addCard" />
+        <item itemvalue="JUnit.Registration.deposit" />
         <item itemvalue="JUnit.Registration.getEvents" />
+        <item itemvalue="JUnit.Registration.registration (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -954,39 +953,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Registration - 2018.12.17 at 17h 45m 51s.xml">
+    <history-entry file="Registration_deposit - 2018.12.18 at 18h 42m 27s.xml">
+      <configuration name="Registration.deposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Registration_deposit - 2018.12.18 at 18h 42m 46s.xml">
+      <configuration name="Registration.deposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Registration_deposit - 2018.12.18 at 18h 43m 17s.xml">
+      <configuration name="Registration.deposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Registration_deposit - 2018.12.18 at 18h 43m 44s.xml">
+      <configuration name="Registration.deposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Registration_deposit - 2018.12.18 at 18h 44m 50s.xml">
+      <configuration name="Registration.deposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Registration - 2018.12.18 at 18h 45m 47s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.17 at 17h 46m 13s.xml">
+    <history-entry file="Registration - 2018.12.18 at 18h 49m 14s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.17 at 17h 47m 41s.xml">
-      <configuration name="Registration" configurationId="JUnit" />
+    <history-entry file="Registration_addCard - 2018.12.18 at 18h 50m 02s.xml">
+      <configuration name="Registration.addCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.17 at 17h 48m 01s.xml">
-      <configuration name="Registration" configurationId="JUnit" />
+    <history-entry file="Registration_addCard - 2018.12.18 at 18h 51m 28s.xml">
+      <configuration name="Registration.addCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Registration - 2018.12.17 at 17h 48m 22s.xml">
-      <configuration name="Registration" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Registration - 2018.12.17 at 17h 48m 59s.xml">
-      <configuration name="Registration" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Registration - 2018.12.17 at 17h 49m 38s.xml">
-      <configuration name="Registration" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Registration - 2018.12.17 at 17h 50m 27s.xml">
-      <configuration name="Registration" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Registration - 2018.12.17 at 17h 51m 56s.xml">
-      <configuration name="Registration" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Registration - 2018.12.17 at 17h 54m 30s.xml">
+    <history-entry file="Registration - 2018.12.18 at 18h 52m 21s.xml">
       <configuration name="Registration" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="829" extended-state="6" />
+    <frame x="1" y="23" width="1440" height="829" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
@@ -998,14 +997,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47761193" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33378562" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3283582" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3283582" />
@@ -1041,16 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/desktop/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1192,20 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/AddCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/service/Drivers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -1225,13 +1200,6 @@
             <element signature="e#1542#1543#0" expanded="true" />
             <element signature="e#1587#1588#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1257,12 +1225,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/desktop/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/AddCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/QuickDeposit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/mobile/Registration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+        <state relative-caret-position="2010">
+          <caret line="157" column="27" selection-start-line="157" selection-end-line="158" />
           <folding>
-            <marker date="1545061894158" expanded="true" signature="4857:4890" ph="..." />
+            <marker date="1545152020179" expanded="true" signature="4850:4883" ph="..." />
+            <marker date="1545152020179" expanded="true" signature="6345:6479" ph="..." />
           </folding>
         </state>
       </provider>

@@ -9,15 +9,14 @@ import org.junit.Test;
 import org.junit.experimental.theories.Theories;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import service.Order;
 import service.OrderedRunner;
 import tests.BaseTest;
 
 import javax.crypto.Mac;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.switchTo;
+import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.source;
 import static com.codeborne.selenide.WebDriverRunner.url;
 import static com.jayway.restassured.RestAssured.given;
@@ -75,16 +74,18 @@ public class Registration extends BaseTest {
     String CARD_NUMBER = "#cc_card_number";
     String EXPIRY_MONTH = "#cc_exp_month";
     String EXPIRY_YEAR = "#cc_exp_year";
-    String CONTINUE_BUTTON = String.valueOf(By.xpath("//*[@id=\"continueButton\"]"));
+    String CONTINUE_BUTTON = "btnSubmit";
     String SUCCESS_MESSAGE = dCrlat("infoPanel.message");
 
 
     //Deposit
      String AMOUNT = dCrlat("enterAmount");
      String CVV = dCrlat("cvv2");
-     String SUBMIT_DEPOSIT = dCrlat("submit");
+     String SUBMIT_DEPOSIT = "//button[@type='submit']";
      String DIALOG = dCrlat("dialog.accept");
-     String BALANCE = dCrlat("balanceAmount");
+     String BALANCE = dCrlat("rightMenuBtn");
+     String POPUP = dUAT("popUpWindow");
+     String POPUP_CLOSE_BTN = dUAT("popUpCloseButton");
 
 
     @Test
@@ -116,7 +117,7 @@ public class Registration extends BaseTest {
         $(TERMS_COND).parent().click();
         $(COMPLETE_REGISTRATION).click();
 
-        Thread.sleep(5000);
+        Thread.sleep(7000);
 
 //        $(TITLE_TEXT).shouldBe(Condition.attribute("DEPOSIT"));
 //        $(MY_BET_BUTTON).click();
@@ -132,13 +133,18 @@ public class Registration extends BaseTest {
         open(BASE_URL);
         $(dCrlat("signInButton")).click();
         $(dCrlat("username")).setValue(USERNAME_V);
+//        $(dCrlat("username")).setValue("Auto_tester46165");
         $(dCrlat("password")).setValue("123456test");
         $("#log-form > form > div:nth-child(7) > button").click();
+        boolean panel = $(dCrlat("panelButtons")).isDisplayed();
+        if (panel==true){
+            $(dCrlat("panelButtons")).click();
+        }
 //        $(POPUP_BUTTON).isDisplayed();
 //        $(CLOSE_WELCOME_POPUP).click();
-
-        $(WELCOME_POPUP_TEXT).isDisplayed();
-        $(WELCOME_POPUP_TEXT).shouldHave(Condition.text(USERNAME_V));
+//
+//        $(WELCOME_POPUP_TEXT).isDisplayed();
+//        $(WELCOME_POPUP_TEXT).shouldHave(Condition.text(USERNAME_V));
 //        $(TUTORIAL_OVERLAY).isDisplayed();
 //        $(CLOSE_TUTORIAL_BUTTON).click();
 
@@ -147,30 +153,34 @@ public class Registration extends BaseTest {
         @Order(order = 3)
         public void addCard () throws InterruptedException {
             login();
+            Thread.sleep(2000);
             open(BASE_URL + "/deposit/addcard");
             switchTo().frame(FRAME);
             $(CARDHOLDER_NAME).setValue("Auto Tester");
-            $(CARD_NUMBER).setValue("Auto 4532279700741928");
+            $(CARD_NUMBER).setValue("4532279700741928");
             $(EXPIRY_MONTH).selectOption("12");
             $(EXPIRY_YEAR).selectOption("2021");
-            $(CONTINUE_BUTTON).click();
-            Thread.sleep(2000);
+            $(By.name(CONTINUE_BUTTON)).click();
             switchTo().defaultContent();
-            Thread.sleep(2000);
-            $(SUCCESS_MESSAGE).should(Condition.text("Your card was added successfully."));
+//            $(SUCCESS_MESSAGE).should(Condition.text("Your card was added successfully."));
     }
 
-//    @Test
+    @Test
     @Order(order = 4)
-    public void deposit(){
-
+    public void deposit() throws InterruptedException {
+        login();
+        Thread.sleep(2000);
         open(BASE_URL+ "/deposit/registered");
         $(AMOUNT).setValue("6.55");
         $(CVV).setValue("123");
-        $(SUBMIT_DEPOSIT).click();
+        $(By.xpath(SUBMIT_DEPOSIT)).click();
         $(DIALOG).click();
+        boolean popup = $(POPUP).isDisplayed();
+        if (popup) {
+            $(POPUP_CLOSE_BTN).click();
+        }
         $(SUCCESS_MESSAGE).shouldHave(Condition.text("£6.55"));
-        $(BALANCE).should(Condition.text("£6.55"));
+        $(BALANCE).shouldBe(Condition.text("£6.55"));
 
     }
 
@@ -187,10 +197,10 @@ public class Registration extends BaseTest {
                 .log().all()
                 .extract().response();
 
-        JsonPath jp = response.jsonPath();
-        String id = jp.getObject("SSResponse.children[\"\"0\"\"].event.children[\"\"0\"\"].market.children[\"\"0\"\"].outcome.id", String.class);
+//        JsonPath jp = response.jsonPath();
+//        String id = jp.getObject("SSResponse.children[\"\"0\"\"].event.children[\"\"0\"\"].market.children[\"\"0\"\"].outcome.id", String.class);
 
-        System.out.println(id);
+        System.out.println(response.asString());
 
     }
 
